@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -70,
+      "left": 240,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 5,
+      "left": 240,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "led1:A",
+      "red",
+      [
+        "h45",
+        "v-75",
+        "h140"
+      ]
+    ],
+    [
+      "led1:C",
+      "r1:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "r1:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-110",
+        "v75",
+        "h-90"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E016 återanvänder E015-kopplingen och använder två for-loopar med analogWrite för att skapa ett andande ljus."
+}

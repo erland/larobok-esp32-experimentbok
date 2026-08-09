@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <style>
+    .title{font-family:Arial,sans-serif;font-size:34px;font-weight:bold;fill:#1F5F8B}
+    .small{font-family:Arial,sans-serif;font-size:16px;fill:#555}
+    .label{font-family:Arial,sans-serif;font-size:18px;fill:#222}
+    .pintext{font-family:Arial,sans-serif;font-size:15px;fill:#fff}
+    .board{fill:#2d6a4f;stroke:#1b4332;stroke-width:5;rx:18}
+    .chip{fill:#222;rx:7}
+    .pinbox{fill:#f28c28;rx:6}
+    .gndbox{fill:#222;rx:6}
+    .wireSig{stroke:#f28c28;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .wireGnd{stroke:#222;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .lead{stroke:#777;stroke-width:8;stroke-linecap:round}
+    .resbody{fill:#d6b48f;stroke:#7f5539;stroke-width:3;rx:10}
+    .arrow{stroke:#1F5F8B;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1F5F8B"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="165" width="250" height="220" class="board"/>
+  <rect x="145" y="205" width="90" height="60" class="chip"/>
+  <text x="138" y="315" class="label" fill="#fff">ESP32</text>
+  <rect x="270" y="210" width="78" height="34" class="pinbox"/>
+  <text x="283" y="232" class="pintext">GPIO 23</text>
+  <rect x="270" y="312" width="78" height="34" class="gndbox"/>
+  <text x="294" y="335" class="pintext">GND</text>
+
+  <line x1="555" y1="210" x2="555" y2="350" class="lead"/>
+  <line x1="660" y1="240" x2="660" y2="350" class="lead"/>
+  <circle cx="605" cy="195" r="70" fill="#ff4d4d" stroke="#9b2226" stroke-width="5"/>
+  <path d="M560 208 Q605 125 650 208" fill="none" stroke="#ffb3b3" stroke-width="10" opacity="0.7"/>
+
+  <line x1="660" y1="350" x2="770" y2="350" class="lead"/>
+  <rect x="770" y="325" width="125" height="50" class="resbody"/>
+  <line x1="895" y1="350" x2="1000" y2="350" class="lead"/>
+
+  <path d="M348 227 C420 227 480 250 555 350" class="wireSig"/>
+  <path d="M1000 350 C1040 350 1055 420 950 438 C770 466 490 420 348 329" class="wireGnd"/>
+
+  <text x="490" y="392" class="label">Långt ben</text>
+  <path d="M575 382 C565 370 560 364 557 355" class="arrow"/>
+
+  <text x="640" y="392" class="label">Kort ben</text>
+  <path d="M720 382 C700 370 680 360 662 352" class="arrow"/>
+
+  <text x="760" y="410" class="small">Motstånd 220–330 Ω</text>
+</svg>

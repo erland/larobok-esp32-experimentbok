@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:21px;fill:#444}
+    .small{font-size:17px;fill:#555}
+  </style>
+  <g transform="translate(70,55)">
+    <rect class="panel" x="0" y="0" width="1140" height="455" rx="18"/>
+    <text class="t h" x="38" y="58">Snabba blink kan se ut som ljusstyrka</text>
+    <text class="t small" x="40" y="90">Ögat hinner inte se de snabba blinkningarna. Det ser bara svagare eller starkare ljus.</text>
+
+    <g transform="translate(75,140)">
+      <rect class="box" x="0" y="0" width="245" height="235" rx="14"/>
+      <text class="t s" x="48" y="45">Värde 40</text>
+      <circle cx="122" cy="102" r="38" fill="#ffb5b5" stroke="#9d2323" stroke-width="4"/>
+      <rect x="40" y="165" width="38" height="28" fill="#ff4a4a"/>
+      <rect x="90" y="165" width="110" height="28" fill="#e8e8e8"/>
+      <text class="t small" x="52" y="218">lite på</text>
+    </g>
+
+    <g transform="translate(447,140)">
+      <rect class="box" x="0" y="0" width="245" height="235" rx="14"/>
+      <text class="t s" x="48" y="45">Värde 140</text>
+      <circle cx="122" cy="102" r="38" fill="#ff7777" stroke="#9d2323" stroke-width="4"/>
+      <rect x="40" y="165" width="105" height="28" fill="#ff4a4a"/>
+      <rect x="145" y="165" width="55" height="28" fill="#e8e8e8"/>
+      <text class="t small" x="49" y="218">mer på</text>
+    </g>
+
+    <g transform="translate(819,140)">
+      <rect class="box" x="0" y="0" width="245" height="235" rx="14"/>
+      <text class="t s" x="48" y="45">Värde 255</text>
+      <circle cx="122" cy="102" r="38" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+      <rect x="40" y="165" width="160" height="28" fill="#ff4a4a"/>
+      <text class="t small" x="52" y="218">mest på</text>
+    </g>
+
+    <text class="t s" x="392" y="425">Högre tal gör ljuset starkare.</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+experiment: E006
+title: Fyrtornet
+purpose: Skapa ett berättande blinkmönster som känns som ett litet fyrtorn.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio: GPIO23
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED1
+    type: led
+    color: yellow
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R1
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED1.anode
+    description: Signal från ESP32 till LED-lampans långa ben.
+  - from: LED1.cathode
+    to: R1.pin1
+    description: LED-lampans korta ben går till motståndet.
+  - from: R1.pin2
+    to: ESP32.GND
+    description: Motståndet går tillbaka till GND.
+canonical_path: ESP32.GPIO23 -> LED1.anode -> LED1.cathode -> R1 -> ESP32.GND
+code:
+  pin_constant: ledPin
+  pin_value: 23
+  behavior: Ett långt blink, en kort paus, ett kortare blink och en lång paus innan signalen börjar om.
+  rhythm:
+    - state: HIGH
+      duration_ms: 500
+    - state: LOW
+      duration_ms: 250
+    - state: HIGH
+      duration_ms: 180
+    - state: LOW
+      duration_ms: 1400
+safety:
+  - LED ska alltid ha seriemotstånd.
+  - Återanvänd gärna koppling från E002 om den fungerade.
+  - Koppla helst med USB-kabeln urdragen.
+verification:
+  - Kontrollera att kopplingen är identisk med E001/E002.
+  - Kontrollera att koden använder GPIO23.
+  - Kontrollera att rytmen känns som långt blink -> kort blink -> lång paus.
+illustrations:
+  - id: E006-A
+    type: parts_overview
+    source: generated_svg
+  - id: E006-B
+    type: single_led_connection_map
+    source: generated_svg
+  - id: E006-C
+    type: lighthouse_timeline
+    source: generated_svg
+  - id: E006-D
+    type: rhythm_comparison
+    source: generated_svg

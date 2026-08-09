@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:22px;fill:#444}
+    .small{font-size:18px;fill:#555}
+    .code{font-family:DejaVu Sans Mono, monospace;font-size:20px;fill:#222}
+    .up{stroke:#43b94a;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .down{stroke:#3d7eff;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <g transform="translate(70,55)">
+    <rect class="panel" x="0" y="0" width="1140" height="450" rx="18"/>
+    <text class="t h" x="36" y="50">En loop räknar upp – en loop räknar ned</text>
+    <text class="t small" x="36" y="84">Värdet ändras lite i taget. Ljuset följer med.</text>
+
+    <g transform="translate(95,135)">
+      <rect class="box" x="0" y="0" width="430" height="240" rx="16"/>
+      <text class="t s" x="30" y="42">Ljuset växer</text>
+      <text class="code" x="30" y="88">0 → 5 → 10 → ... → 255</text>
+      <path class="up" d="M55 190 C125 158 205 130 340 98"/>
+      <circle cx="55" cy="190" r="9" fill="#43b94a"/>
+      <circle cx="340" cy="98" r="9" fill="#43b94a"/>
+      <text class="t small" x="30" y="220">value = value + 5</text>
+    </g>
+
+    <g transform="translate(615,135)">
+      <rect class="box" x="0" y="0" width="430" height="240" rx="16"/>
+      <text class="t s" x="30" y="42">Ljuset minskar</text>
+      <text class="code" x="30" y="88">255 → 250 → ... → 0</text>
+      <path class="down" d="M55 104 C130 135 220 160 340 190"/>
+      <circle cx="55" cy="104" r="9" fill="#3d7eff"/>
+      <circle cx="340" cy="190" r="9" fill="#3d7eff"/>
+      <text class="t small" x="30" y="220">value = value - 5</text>
+    </g>
+
+    <text class="t small" x="380" y="420">Upp och ned tillsammans blir ett andande ljus.</text>
+  </g>
+</svg>

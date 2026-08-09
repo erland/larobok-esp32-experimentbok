@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRed",
+      "top": -70,
+      "left": 240,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRed",
+      "top": 5,
+      "left": 240,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledBlue",
+      "top": -70,
+      "left": 370,
+      "attrs": {
+        "color": "blue"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rBlue",
+      "top": 5,
+      "left": 370,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "ledRed:A",
+      "orange",
+      [
+        "h45",
+        "v-75",
+        "h140"
+      ]
+    ],
+    [
+      "ledRed:C",
+      "rRed:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "rRed:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-110",
+        "v75",
+        "h-90"
+      ]
+    ],
+    [
+      "esp:22",
+      "ledBlue:A",
+      "blue",
+      [
+        "h60",
+        "v-95",
+        "h270"
+      ]
+    ],
+    [
+      "ledBlue:C",
+      "rBlue:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "rBlue:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-250",
+        "v90",
+        "h-90"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E005 bygger ett leksakspolisljus. GPIO23 styr röd LED och GPIO22 styr blå LED. Varje LED har eget motstånd till GND."
+}

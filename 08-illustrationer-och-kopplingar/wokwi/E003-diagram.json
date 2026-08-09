@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -55,
+      "left": 215,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 15,
+      "left": 215,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -55,
+      "left": 330,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 15,
+      "left": 330,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "led1:A",
+      "orange",
+      [
+        "h45",
+        "v-65",
+        "h120"
+      ]
+    ],
+    [
+      "led1:C",
+      "r1:1",
+      "green",
+      [
+        "v30"
+      ]
+    ],
+    [
+      "r1:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-95",
+        "v65",
+        "h-85"
+      ]
+    ],
+    [
+      "esp:22",
+      "led2:A",
+      "blue",
+      [
+        "h60",
+        "v-80",
+        "h230"
+      ]
+    ],
+    [
+      "led2:C",
+      "r2:1",
+      "green",
+      [
+        "v30"
+      ]
+    ],
+    [
+      "r2:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-210",
+        "v80",
+        "h-90"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E003 lägger till en andra LED. GPIO23 styr LED1 och GPIO22 styr LED2. Varje LED har eget motstånd till GND."
+}

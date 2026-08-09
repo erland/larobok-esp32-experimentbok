@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#747474"/>
+    </marker>
+  </defs>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:23px;fill:#333;font-weight:700}
+    .small{font-size:19px;fill:#555}
+    .code{font-family:DejaVu Sans Mono, monospace;font-size:22px;fill:#222}
+  </style>
+
+  <g transform="translate(70,60)">
+    <rect class="panel" x="0" y="0" width="1140" height="430" rx="18"/>
+    <text class="t h" x="36" y="55">lightOne() är ett kodrecept</text>
+    <text class="t small" x="38" y="90">Samma recept kan användas för olika lampor.</text>
+
+    <g transform="translate(65,125)">
+      <rect class="box" x="0" y="0" width="285" height="190" rx="14"/>
+      <text class="t s" x="48" y="45">1. Släck alla</text>
+      <circle cx="82" cy="100" r="28" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <circle cx="142" cy="100" r="28" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <circle cx="202" cy="100" r="28" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <text class="t small" x="58" y="158">alla är av</text>
+    </g>
+
+    <line x1="370" y1="220" x2="425" y2="220" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <g transform="translate(445,125)">
+      <rect class="box" x="0" y="0" width="285" height="190" rx="14"/>
+      <text class="t s" x="48" y="45">2. Tänd vald</text>
+      <circle cx="72" cy="105" r="29" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <circle cx="142" cy="105" r="36" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/>
+      <circle cx="212" cy="105" r="29" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <text class="t small" x="66" y="158">en lampa lyser</text>
+    </g>
+
+    <line x1="750" y1="220" x2="805" y2="220" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <g transform="translate(825,125)">
+      <rect class="box" x="0" y="0" width="285" height="190" rx="14"/>
+      <text class="t s" x="80" y="45">3. Vänta</text>
+      <text class="t small" x="74" y="103">lampan syns</text>
+      <text class="t small" x="82" y="139">en stund</text>
+    </g>
+
+    <g transform="translate(170,360)">
+      <text class="code" x="0" y="0">lightOne(redPin);</text>
+      <text class="code" x="345" y="0">lightOne(yellowPin);</text>
+      <text class="code" x="735" y="0">lightOne(greenPin);</text>
+    </g>
+  </g>
+</svg>

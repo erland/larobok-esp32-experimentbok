@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#fff;stroke:#1f6b90;stroke-width:3}
+    .active{fill:#fff3c8;stroke:#ad7a00;stroke-width:4}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:22px;fill:#444}
+    .code{font-family:DejaVu Sans Mono, monospace;font-size:22px;fill:#222}
+    .small{font-size:18px;fill:#555}
+    .arrow{fill:#ad7a00}
+  </style>
+
+  <g transform="translate(70,60)">
+    <rect class="panel" x="0" y="0" width="1140" height="430" rx="18"/>
+
+    <text class="t h" x="36" y="55">Listan är en rad med pinnar</text>
+    <text class="code" x="38" y="98">int ledPins[] = {23, 22, 21, 19};</text>
+
+    <g transform="translate(115,165)">
+      <rect class="box" x="0" y="0" width="170" height="130" rx="12"/>
+      <text class="t s" x="58" y="45">23</text>
+      <circle cx="85" cy="82" r="24" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+      <text class="t small" x="56" y="156">LED 1</text>
+    </g>
+
+    <g transform="translate(345,165)">
+      <rect class="active" x="0" y="0" width="170" height="130" rx="12"/>
+      <text class="t s" x="58" y="45">22</text>
+      <circle cx="85" cy="82" r="24" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/>
+      <text class="t small" x="56" y="156">LED 2</text>
+    </g>
+
+    <g transform="translate(575,165)">
+      <rect class="box" x="0" y="0" width="170" height="130" rx="12"/>
+      <text class="t s" x="58" y="45">21</text>
+      <circle cx="85" cy="82" r="24" fill="#54c66a" stroke="#237a34" stroke-width="4"/>
+      <text class="t small" x="56" y="156">LED 3</text>
+    </g>
+
+    <g transform="translate(805,165)">
+      <rect class="box" x="0" y="0" width="170" height="130" rx="12"/>
+      <text class="t s" x="58" y="45">19</text>
+      <circle cx="85" cy="82" r="24" fill="#69a7ff" stroke="#2467c2" stroke-width="4"/>
+      <text class="t small" x="56" y="156">LED 4</text>
+    </g>
+
+    <!-- Simple pointer above active box -->
+    <g transform="translate(430,120)">
+      <text class="t small" x="-52" y="0">loopen pekar här nu</text>
+      <path class="arrow" d="M0 16 L18 52 L-18 52 Z"/>
+    </g>
+
+    <text class="t small" x="360" y="388">loopen går vidare en ruta i taget</text>
+  </g>
+</svg>

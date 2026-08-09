@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .row{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:22px;fill:#444}
+    .small{font-size:18px;fill:#555}
+  </style>
+  <g transform="translate(80,55)">
+    <rect class="panel" x="0" y="0" width="1120" height="450" rx="18"/>
+    <text class="t h" x="40" y="58">En enkel hemlig blinkkod</text>
+    <text class="t small" x="42" y="92">Kort och lång blinkning kan betyda olika saker.</text>
+
+    <g transform="translate(70,130)">
+      <rect class="row" x="0" y="0" width="980" height="62" rx="10"/>
+      <circle cx="55" cy="31" r="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <circle cx="100" cy="31" r="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <text class="t s" x="175" y="39">kort kort</text>
+      <text class="t h" x="740" y="42">JA</text>
+    </g>
+
+    <g transform="translate(70,205)">
+      <rect class="row" x="0" y="0" width="980" height="62" rx="10"/>
+      <rect x="38" y="18" width="50" height="26" rx="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <rect x="100" y="18" width="50" height="26" rx="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <text class="t s" x="175" y="39">lång lång</text>
+      <text class="t h" x="735" y="42">NEJ</text>
+    </g>
+
+    <g transform="translate(70,280)">
+      <rect class="row" x="0" y="0" width="980" height="62" rx="10"/>
+      <circle cx="48" cy="31" r="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <rect x="78" y="18" width="50" height="26" rx="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <circle cx="158" cy="31" r="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <text class="t s" x="205" y="39">kort lång kort</text>
+      <text class="t h" x="735" y="42">HEJ</text>
+    </g>
+
+    <g transform="translate(70,355)">
+      <rect class="row" x="0" y="0" width="980" height="62" rx="10"/>
+      <rect x="35" y="18" width="50" height="26" rx="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <circle cx="115" cy="31" r="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <rect x="145" y="18" width="50" height="26" rx="13" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/>
+      <text class="t s" x="230" y="39">lång kort lång</text>
+      <text class="t h" x="730" y="42">KOM</text>
+    </g>
+  </g>
+</svg>

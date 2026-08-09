@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:20px;fill:#444}
+    .small{font-size:18px;fill:#555}
+    .arrow{stroke:#ad7a00;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrowhead{fill:#ad7a00}
+  </style>
+  <g transform="translate(70,55)">
+    <rect class="panel" x="0" y="0" width="1140" height="450" rx="18"/>
+    <text class="t h" x="36" y="50">Färgen vandrar runt som en liten regnbåge</text>
+    <text class="t small" x="36" y="84">Många färgsteg i rad gör att ljuset känns mer levande.</text>
+
+    <g transform="translate(55,150)">
+      <!-- seven sequence cards -->
+      <g transform="translate(0,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+        <text class="t s" x="39" y="133">Röd</text>
+      </g>
+      <g transform="translate(150,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#ff8a26" stroke="#c26300" stroke-width="4"/>
+        <text class="t s" x="22" y="133">Orange</text>
+      </g>
+      <g transform="translate(300,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#ffd84d" stroke="#ad7a00" stroke-width="4"/>
+        <text class="t s" x="37" y="133">Gul</text>
+      </g>
+      <g transform="translate(450,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#57c85f" stroke="#237a34" stroke-width="4"/>
+        <text class="t s" x="30" y="133">Grön</text>
+      </g>
+      <g transform="translate(600,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#45d8d4" stroke="#1a8a87" stroke-width="4"/>
+        <text class="t s" x="21" y="133">Turkos</text>
+      </g>
+      <g transform="translate(750,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#5f90ff" stroke="#2467c2" stroke-width="4"/>
+        <text class="t s" x="34" y="133">Blå</text>
+      </g>
+      <g transform="translate(900,0)">
+        <rect class="box" x="0" y="0" width="130" height="170" rx="14"/>
+        <circle cx="65" cy="72" r="34" fill="#bf62ff" stroke="#7a2fb5" stroke-width="4"/>
+        <text class="t s" x="37" y="133">Lila</text>
+      </g>
+
+      <!-- arrows between cards -->
+      <g>
+        <path class="arrow" d="M132 72 H145"/>
+        <polygon class="arrowhead" points="145,72 133,66 133,78"/>
+        <path class="arrow" d="M282 72 H295"/>
+        <polygon class="arrowhead" points="295,72 283,66 283,78"/>
+        <path class="arrow" d="M432 72 H445"/>
+        <polygon class="arrowhead" points="445,72 433,66 433,78"/>
+        <path class="arrow" d="M582 72 H595"/>
+        <polygon class="arrowhead" points="595,72 583,66 583,78"/>
+        <path class="arrow" d="M732 72 H745"/>
+        <polygon class="arrowhead" points="745,72 733,66 733,78"/>
+        <path class="arrow" d="M882 72 H895"/>
+        <polygon class="arrowhead" points="895,72 883,66 883,78"/>
+      </g>
+
+      <!-- loop arrow -->
+      <path class="arrow" d="M1042 112 C1095 150 1080 245 940 255 L150 255 C45 255 35 155 78 122"/>
+      <polygon class="arrowhead" points="78,122 92,116 89,131"/>
+      <text class="t small" x="398" y="278">Efter lila börjar färgresan om från början.</text>
+    </g>
+  </g>
+</svg>

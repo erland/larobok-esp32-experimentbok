@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="620" viewBox="0 0 1300 620">
+<rect width="1300" height="620" fill="#fffdf7"/>
+<style>
+.t{font-family:Arial, Helvetica, sans-serif}
+.gpio{font-size:15px;font-weight:700;fill:#fff}
+.label{font-size:15px;fill:#333}
+.name{font-size:20px;font-weight:700}
+</style>
+<g transform="translate(80,120)">
+  <rect x="0" y="0" width="250" height="370" rx="4" fill="#2e7250" stroke="#1b4b35" stroke-width="5"/>
+  <rect x="78" y="55" width="88" height="62" rx="4" fill="#222"/>
+  <text class="t" x="95" y="300" font-size="22" fill="#163827">ESP32</text>
+  <rect x="215" y="45" width="110" height="40" rx="3" fill="#ff4a4a"/><text class="t gpio" x="235" y="71">GPIO 23</text>
+  <rect x="215" y="270" width="88" height="40" rx="3" fill="#222"/><text class="t gpio" x="241" y="296">GND</text>
+</g>
+
+<line x1="400" y1="185" x2="540" y2="185" stroke="#ff4a4a" stroke-width="8" stroke-linecap="round"/>
+<circle cx="580" cy="115" r="44" fill="#ff4a4a" stroke="#9d2323" stroke-width="5"/>
+<path d="M555 119 C570 95, 590 95, 605 119" fill="none" stroke="#ffb1b1" stroke-width="8" stroke-linecap="round"/>
+<line x1="540" y1="153" x2="540" y2="185" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+<line x1="620" y1="153" x2="620" y2="185" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+<text class="t name" x="660" y="112" fill="#9d2323">LED</text>
+<text class="t label" x="540" y="216" text-anchor="middle">Långt ben</text>
+<text class="t label" x="620" y="216" text-anchor="middle">Kort ben</text>
+
+<line x1="620" y1="185" x2="790" y2="185" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+<rect x="790" y="160" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+<line x1="945" y1="185" x2="1130" y2="185" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+<path d="M1130 185 L1130 420 L388 420" fill="none" stroke="#202020" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="t label" x="805" y="246">Motstånd 220–330 Ω</text>
+<text class="t" x="395" y="165" font-size="15" font-weight="700" fill="#ff4a4a">GPIO 23</text>
+<text class="t" x="1045" y="455" font-size="17" fill="#222">GND</text>
+</svg>

@@ -1,0 +1,66 @@
+experiment: E001
+title: Första blinket
+purpose: Första fysiska wow där kod styr en LED.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio: GPIO23
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED1
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R1
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED1.anode
+    description: Signal från ESP32 till LED-lampans långa ben.
+  - from: LED1.cathode
+    to: R1.pin1
+    description: LED-lampans korta ben går till motståndet.
+  - from: R1.pin2
+    to: ESP32.GND
+    description: Motståndet går tillbaka till GND.
+canonical_path: ESP32.GPIO23 -> LED1.anode -> LED1.cathode -> R1 -> ESP32.GND
+code:
+  pin_constant: ledPin
+  pin_value: 23
+  behavior: Blinkar på/av med 1000 ms intervall.
+safety:
+  - LED ska alltid ha seriemotstånd.
+  - Koppla helst med USB urdragen.
+  - Dra ur USB om något blir varmt.
+verification:
+  - Kontrollera att GPIO23 finns/motsvaras på valt ESP32 DevKit-kort.
+  - Kontrollera att LED-polritet visas korrekt.
+  - Kontrollera att LED-benen inte sitter i samma breadboardrad.
+  - Kontrollera fysisk blinkning med koden i E001.
+illustrations:
+  - id: E001-A
+    type: parts_overview
+    source: prompt_or_component_library
+  - id: E001-B
+    type: led_polarity_zoom
+    source: structured_svg_or_manual
+  - id: E001-C
+    type: breadboard_connection
+    source: wokwi_or_structured_svg
+  - id: E001-D
+    type: troubleshooting
+    source: annotated_structured_svg
+  - id: E001-E
+    type: result_on_off
+    source: simple_svg_or_layout

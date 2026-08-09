@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:21px;fill:#444}
+    .small{font-size:18px;fill:#555}
+    .arrow{stroke:#ad7a00;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrowhead{fill:#ad7a00}
+  </style>
+  <g transform="translate(70,55)">
+    <rect class="panel" x="0" y="0" width="1140" height="450" rx="18"/>
+    <text class="t h" x="36" y="50">Samma lampa kan visa olika lägen</text>
+    <text class="t small" x="36" y="84">Färgen får ett namn och kan betyda något.</text>
+
+    <g transform="translate(82,165)">
+      <g transform="translate(0,0)">
+        <rect class="box" x="0" y="0" width="165" height="170" rx="14"/>
+        <circle cx="82" cy="62" r="34" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/>
+        <text class="t s" x="48" y="128">Glad</text>
+      </g>
+      <g transform="translate(205,0)">
+        <rect class="box" x="0" y="0" width="165" height="170" rx="14"/>
+        <circle cx="82" cy="62" r="34" fill="#4d90ff" stroke="#2467c2" stroke-width="4"/>
+        <text class="t s" x="48" y="128">Lugn</text>
+      </g>
+      <g transform="translate(410,0)">
+        <rect class="box" x="0" y="0" width="165" height="170" rx="14"/>
+        <circle cx="82" cy="62" r="34" fill="#45c86b" stroke="#237a34" stroke-width="4"/>
+        <text class="t s" x="46" y="128">Fokus</text>
+      </g>
+      <g transform="translate(615,0)">
+        <rect class="box" x="0" y="0" width="165" height="170" rx="14"/>
+        <circle cx="82" cy="62" r="34" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+        <text class="t s" x="35" y="128">Varning</text>
+      </g>
+      <g transform="translate(820,0)">
+        <rect class="box" x="0" y="0" width="165" height="170" rx="14"/>
+        <circle cx="82" cy="62" r="34" fill="#a55cff" stroke="#5a249c" stroke-width="4"/>
+        <text class="t s" x="48" y="128">Favorit</text>
+      </g>
+
+      <path class="arrow" d="M166 62 H198"/>
+      <polygon class="arrowhead" points="198,62 186,56 186,68"/>
+      <path class="arrow" d="M371 62 H403"/>
+      <polygon class="arrowhead" points="403,62 391,56 391,68"/>
+      <path class="arrow" d="M576 62 H608"/>
+      <polygon class="arrowhead" points="608,62 596,56 596,68"/>
+      <path class="arrow" d="M781 62 H813"/>
+      <polygon class="arrowhead" points="813,62 801,56 801,68"/>
+    </g>
+
+    <text class="t small" x="356" y="405">När färgen får ett namn kan den bli en enkel signal.</text>
+  </g>
+</svg>

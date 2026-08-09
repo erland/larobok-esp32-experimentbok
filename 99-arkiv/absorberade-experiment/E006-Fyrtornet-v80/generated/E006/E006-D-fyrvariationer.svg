@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .step{fill:#ffffff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:24px;fill:#444}
+    .tiny{font-size:18px;fill:#555}
+  </style>
+
+  <!-- Row 1 -->
+  <g transform="translate(70,56)">
+    <rect class="panel" x="0" y="0" width="1140" height="150" rx="16"/>
+    <text class="t h" x="30" y="42">Lugn</text>
+    <g transform="translate(240,28)">
+      <rect class="step" x="0" y="0" width="150" height="86" rx="12"/>
+      <circle cx="75" cy="30" r="22" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+      <line x1="67" y1="50" x2="59" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="83" y1="50" x2="91" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t s" x="57" y="76">PÅ</text>
+      <text class="t tiny" x="38" y="108">500 ms</text>
+    </g>
+    <g transform="translate(440,28)">
+      <rect class="step" x="0" y="0" width="150" height="86" rx="12"/>
+      <circle cx="75" cy="30" r="22" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <line x1="67" y1="50" x2="59" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="83" y1="50" x2="91" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t s" x="55" y="76">AV</text>
+      <text class="t tiny" x="34" y="108">1800 ms</text>
+    </g>
+    <text class="t s" x="640" y="82">känns stadig och lugn</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(70,246)">
+    <rect class="panel" x="0" y="0" width="1140" height="150" rx="16"/>
+    <text class="t h" x="30" y="42">Fyrtorn</text>
+    <g transform="translate(240,28)">
+      <rect class="step" x="0" y="0" width="120" height="86" rx="12"/>
+      <circle cx="60" cy="30" r="20" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+      <line x1="53" y1="48" x2="46" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="67" y1="48" x2="74" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="42" y="76">PÅ</text>
+      <text class="t tiny" x="30" y="108">500 ms</text>
+    </g>
+    <g transform="translate(380,28)">
+      <rect class="step" x="0" y="0" width="120" height="86" rx="12"/>
+      <circle cx="60" cy="30" r="20" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <line x1="53" y1="48" x2="46" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="67" y1="48" x2="74" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="40" y="76">AV</text>
+      <text class="t tiny" x="30" y="108">250 ms</text>
+    </g>
+    <g transform="translate(520,28)">
+      <rect class="step" x="0" y="0" width="120" height="86" rx="12"/>
+      <circle cx="60" cy="30" r="20" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+      <line x1="53" y1="48" x2="46" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="67" y1="48" x2="74" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="42" y="76">PÅ</text>
+      <text class="t tiny" x="30" y="108">180 ms</text>
+    </g>
+    <g transform="translate(660,28)">
+      <rect class="step" x="0" y="0" width="150" height="86" rx="12"/>
+      <circle cx="75" cy="30" r="20" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <line x1="68" y1="48" x2="61" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="82" y1="48" x2="89" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="55" y="76">AV</text>
+      <text class="t tiny" x="34" y="108">1400 ms</text>
+    </g>
+    <text class="t s" x="840" y="82">långt blink, kort blink, lång paus</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(70,436)">
+    <rect class="panel" x="0" y="0" width="1140" height="150" rx="16"/>
+    <text class="t h" x="30" y="42">Snabb</text>
+    <g transform="translate(240,28)">
+      <rect class="step" x="0" y="0" width="110" height="86" rx="12"/>
+      <circle cx="55" cy="30" r="18" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+      <line x1="49" y1="46" x2="43" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="61" y1="46" x2="67" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="37" y="76">PÅ</text>
+      <text class="t tiny" x="24" y="108">150</text>
+    </g>
+    <g transform="translate(370,28)">
+      <rect class="step" x="0" y="0" width="110" height="86" rx="12"/>
+      <circle cx="55" cy="30" r="18" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <line x1="49" y1="46" x2="43" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="61" y1="46" x2="67" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="35" y="76">AV</text>
+      <text class="t tiny" x="24" y="108">100</text>
+    </g>
+    <g transform="translate(500,28)">
+      <rect class="step" x="0" y="0" width="110" height="86" rx="12"/>
+      <circle cx="55" cy="30" r="18" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+      <line x1="49" y1="46" x2="43" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="61" y1="46" x2="67" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="37" y="76">PÅ</text>
+      <text class="t tiny" x="24" y="108">150</text>
+    </g>
+    <g transform="translate(630,28)">
+      <rect class="step" x="0" y="0" width="110" height="86" rx="12"/>
+      <circle cx="55" cy="30" r="18" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+      <line x1="49" y1="46" x2="43" y2="76" stroke="#666" stroke-width="4"/>
+      <line x1="61" y1="46" x2="67" y2="76" stroke="#666" stroke-width="4"/>
+      <text class="t tiny" x="35" y="76">AV</text>
+      <text class="t tiny" x="24" y="108">250</text>
+    </g>
+    <text class="t s" x="810" y="82">känns mer bråttom</text>
+  </g>
+</svg>

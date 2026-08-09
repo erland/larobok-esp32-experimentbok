@@ -1,0 +1,130 @@
+experiment: E004
+title: Mini-trafikljus
+purpose: Bygg ett mini-trafikljus där ESP32 styr tre LED-lampor i en igenkännbar sekvens.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+    - GPIO22
+    - GPIO21
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED_RED
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED_YELLOW
+    type: led
+    color: yellow
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED_GREEN
+    type: led
+    color: green
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R_RED
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: R_YELLOW
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: R_GREEN
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED_RED.anode
+    description: Signal från ESP32 till röd LED:s långa ben.
+  - from: LED_RED.cathode
+    to: R_RED.pin1
+    description: Röd LED:s korta ben går till sitt motstånd.
+  - from: R_RED.pin2
+    to: ESP32.GND
+    description: Motståndet för röd LED går tillbaka till GND.
+  - from: ESP32.GPIO22
+    to: LED_YELLOW.anode
+    description: Signal från ESP32 till gul LED:s långa ben.
+  - from: LED_YELLOW.cathode
+    to: R_YELLOW.pin1
+    description: Gul LED:s korta ben går till sitt motstånd.
+  - from: R_YELLOW.pin2
+    to: ESP32.GND
+    description: Motståndet för gul LED går tillbaka till GND.
+  - from: ESP32.GPIO21
+    to: LED_GREEN.anode
+    description: Signal från ESP32 till grön LED:s långa ben.
+  - from: LED_GREEN.cathode
+    to: R_GREEN.pin1
+    description: Grön LED:s korta ben går till sitt motstånd.
+  - from: R_GREEN.pin2
+    to: ESP32.GND
+    description: Motståndet för grön LED går tillbaka till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> LED_RED.anode -> LED_RED.cathode -> R_RED -> ESP32.GND
+  - ESP32.GPIO22 -> LED_YELLOW.anode -> LED_YELLOW.cathode -> R_YELLOW -> ESP32.GND
+  - ESP32.GPIO21 -> LED_GREEN.anode -> LED_GREEN.cathode -> R_GREEN -> ESP32.GND
+code:
+  pin_constants:
+    redPin: 23
+    yellowPin: 22
+    greenPin: 21
+  behavior: Rött, gult, grönt och gult igen i en trafikljusliknande sekvens.
+  sequence:
+    - redPin: HIGH
+      yellowPin: LOW
+      greenPin: LOW
+      duration_ms: 2000
+    - redPin: LOW
+      yellowPin: HIGH
+      greenPin: LOW
+      duration_ms: 700
+    - redPin: LOW
+      yellowPin: LOW
+      greenPin: HIGH
+      duration_ms: 2000
+    - redPin: LOW
+      yellowPin: HIGH
+      greenPin: LOW
+      duration_ms: 700
+safety:
+  - Varje LED ska ha eget seriemotstånd.
+  - Koppla inte GPIO-pinnar direkt ihop med varandra.
+  - Koppla helst med USB urdragen.
+  - Dra ur USB om något blir varmt eller luktar konstigt.
+verification:
+  - Kontrollera att GPIO23 styr röd LED, GPIO22 styr gul LED och GPIO21 styr grön LED.
+  - Kontrollera att alla tre LED-lampor har rätt polaritet.
+  - Kontrollera att alla tre LED-lampor har varsitt motstånd till GND.
+  - Kontrollera att koden använder pin 23, 22 och 21.
+  - Kontrollera fysisk sekvens: röd -> gul -> grön -> gul -> omstart.
+illustrations:
+  - id: E004-A
+    type: parts_overview
+    source: generated_svg
+  - id: E004-B
+    type: three_led_connection_map
+    source: generated_svg
+  - id: E004-C
+    type: traffic_light_timeline
+    source: generated_svg
+  - id: E004-D
+    type: troubleshooting
+    source: generated_svg

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+  <rect width="1100" height="500" fill="#ffffff"/>
+  <style>
+    .title{font-family:Arial,sans-serif;font-size:34px;font-weight:bold;fill:#1F5F8B}
+    .label{font-family:Arial,sans-serif;font-size:22px;font-weight:bold;fill:#222}
+    .small{font-family:Arial,sans-serif;font-size:16px;fill:#555}
+    .on{fill:#ffd54f;stroke:#b85c00;stroke-width:3;rx:8}
+    .off{fill:#e8e8e8;stroke:#777;stroke-width:3;rx:8}
+    .axis{stroke:#444;stroke-width:3}
+  </style>
+  <line x1="85" y1="230" x2="970" y2="230" class="axis"/>
+  <rect x="100" y="150" width="110" height="120" class="on"/>
+  <text x="138" y="215" class="label">PÅ</text>
+  <text x="122" y="305" class="small">150 ms</text>
+  <rect x="230" y="150" width="110" height="120" class="off"/>
+  <text x="268" y="215" class="label">AV</text>
+  <text x="252" y="305" class="small">150 ms</text>
+  <rect x="360" y="150" width="110" height="120" class="on"/>
+  <text x="398" y="215" class="label">PÅ</text>
+  <text x="382" y="305" class="small">150 ms</text>
+  <rect x="490" y="150" width="420" height="120" class="off"/>
+  <text x="680" y="215" class="label">AV</text>
+  <text x="670" y="305" class="small">700 ms paus</text>
+  <text x="100" y="395" class="label">Säg rytmen:</text>
+  <text x="255" y="395" class="small">kort – kort – paus</text>
+</svg>

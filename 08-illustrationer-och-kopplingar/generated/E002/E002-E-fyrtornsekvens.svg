@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430">
+  <rect width="1280" height="430" fill="#fffdf7"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#747474"/>
+    </marker>
+  </defs>
+  <style>
+    .card{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:26px;font-weight:700}
+    .s{font-size:19px;fill:#444}
+    .tiny{font-size:17px;fill:#555}
+  </style>
+
+  <!-- cards -->
+  <g transform="translate(88,72)">
+    <rect class="card" x="0" y="0" width="220" height="170" rx="14"/>
+    <circle cx="110" cy="54" r="34" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+    <line x1="98" y1="86" x2="84" y2="134" stroke="#666" stroke-width="5"/>
+    <line x1="122" y1="86" x2="136" y2="134" stroke="#666" stroke-width="5"/>
+    <text class="t h" x="88" y="155">PÅ</text>
+    <text class="t s" x="72" y="188">500 ms</text>
+    <text class="t tiny" x="47" y="219">långt blink</text>
+  </g>
+
+  <g transform="translate(364,72)">
+    <rect class="card" x="0" y="0" width="168" height="170" rx="14"/>
+    <circle cx="84" cy="54" r="30" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+    <line x1="74" y1="82" x2="63" y2="130" stroke="#666" stroke-width="5"/>
+    <line x1="94" y1="82" x2="105" y2="130" stroke="#666" stroke-width="5"/>
+    <text class="t h" x="62" y="155">AV</text>
+    <text class="t s" x="48" y="188">250 ms</text>
+    <text class="t tiny" x="32" y="219">kort paus</text>
+  </g>
+
+  <g transform="translate(588,72)">
+    <rect class="card" x="0" y="0" width="220" height="170" rx="14"/>
+    <circle cx="110" cy="54" r="30" fill="#f4cf4e" stroke="#a87900" stroke-width="4"/>
+    <line x1="100" y1="82" x2="89" y2="130" stroke="#666" stroke-width="5"/>
+    <line x1="120" y1="82" x2="131" y2="130" stroke="#666" stroke-width="5"/>
+    <text class="t h" x="88" y="155">PÅ</text>
+    <text class="t s" x="76" y="188">180 ms</text>
+    <text class="t tiny" x="54" y="219">kort blink</text>
+  </g>
+
+  <g transform="translate(864,72)">
+    <rect class="card" x="0" y="0" width="236" height="170" rx="14"/>
+    <circle cx="118" cy="54" r="30" fill="#e7e7e7" stroke="#777" stroke-width="4"/>
+    <line x1="108" y1="82" x2="97" y2="130" stroke="#666" stroke-width="5"/>
+    <line x1="128" y1="82" x2="139" y2="130" stroke="#666" stroke-width="5"/>
+    <text class="t h" x="96" y="155">AV</text>
+    <text class="t s" x="76" y="188">1400 ms</text>
+    <text class="t tiny" x="68" y="219">lång paus</text>
+  </g>
+
+  <!-- between arrows -->
+  <line x1="308" y1="157" x2="354" y2="157" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="532" y1="157" x2="578" y2="157" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="808" y1="157" x2="854" y2="157" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- return arrow -->
+  <path d="M1100 157 C1204 157, 1210 330, 1045 344 L 250 344 C 142 344, 95 290, 88 201" fill="none" stroke="#747474" stroke-width="4" marker-end="url(#arrow)"/>
+  <text class="t tiny" x="1110" y="142">börja om</text>
+</svg>

@@ -1,0 +1,140 @@
+experiment: E008
+title: Rinnande ljus
+purpose: Bygg vidare från E007 med fyra LED och introducera lista/array samt for-loop.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+    - GPIO22
+    - GPIO21
+    - GPIO19
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED1
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED2
+    type: led
+    color: yellow
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED3
+    type: led
+    color: green
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED4
+    type: led
+    color: blue
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R1
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: R2
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: R3
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: R4
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED1.anode
+    description: Signal från ESP32 till LED 1:s långa ben.
+  - from: LED1.cathode
+    to: R1.pin1
+    description: LED 1:s korta ben går till sitt motstånd.
+  - from: R1.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 1 går tillbaka till GND.
+  - from: ESP32.GPIO22
+    to: LED2.anode
+    description: Signal från ESP32 till LED 2:s långa ben.
+  - from: LED2.cathode
+    to: R2.pin1
+    description: LED 2:s korta ben går till sitt motstånd.
+  - from: R2.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 2 går tillbaka till GND.
+  - from: ESP32.GPIO21
+    to: LED3.anode
+    description: Signal från ESP32 till LED 3:s långa ben.
+  - from: LED3.cathode
+    to: R3.pin1
+    description: LED 3:s korta ben går till sitt motstånd.
+  - from: R3.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 3 går tillbaka till GND.
+  - from: ESP32.GPIO19
+    to: LED4.anode
+    description: Signal från ESP32 till LED 4:s långa ben.
+  - from: LED4.cathode
+    to: R4.pin1
+    description: LED 4:s korta ben går till sitt motstånd.
+  - from: R4.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 4 går tillbaka till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> LED1.anode -> LED1.cathode -> R1 -> ESP32.GND
+  - ESP32.GPIO22 -> LED2.anode -> LED2.cathode -> R2 -> ESP32.GND
+  - ESP32.GPIO21 -> LED3.anode -> LED3.cathode -> R3 -> ESP32.GND
+  - ESP32.GPIO19 -> LED4.anode -> LED4.cathode -> R4 -> ESP32.GND
+code:
+  pin_array:
+    ledPins: [23, 22, 21, 19]
+    ledCount: 4
+  new_ideas:
+    - array/lista över pinnar
+    - for-loop över listan
+  sequence:
+    - LED1
+    - LED2
+    - LED3
+    - LED4
+    - LED3
+    - LED2
+safety:
+  - Varje LED ska ha eget seriemotstånd.
+  - Koppla inte GPIO-pinnar direkt ihop med varandra.
+  - Koppla helst med USB urdragen.
+verification:
+  - Kontrollera att alla fyra LED har varsin signalpinne och var sitt motstånd.
+  - Kontrollera att listan `ledPins[]` matchar den fysiska ordningen.
+  - Kontrollera att sekvensen går LED1 -> LED2 -> LED3 -> LED4 -> LED3 -> LED2.
+illustrations:
+  - id: E008-A
+    type: parts_overview
+    source: generated_svg
+  - id: E008-B
+    type: four_led_connection_map
+    source: generated_svg
+  - id: E008-C
+    type: running_light_sequence
+    source: generated_svg
+  - id: E008-D
+    type: array_and_loop_concept
+    source: generated_svg

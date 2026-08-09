@@ -1,0 +1,56 @@
+# Steg 3.3 – Experimentbank E051–E075
+
+## Omfattning
+
+Detta är tredje delen av experimentbanken och täcker sensorer och mätning: ljus, avstånd, magnetkontakt, lutning, temperatur, rörelse, jordfuktighet och ljudnivå.
+
+Experimenten är fortfarande kandidater. De kan senare flyttas, slås ihop, byta ordning eller tas bort efter komponentanalys och kapitelstruktur.
+
+## Experiment
+
+| ID | Namn | Tema | Komponentnivå | Svårighetsgrad | Komponenter | Elektronikfärdigheter | Programmeringsfärdigheter | Makerfärdigheter | Byggtid | Vuxenhjälp | Bygger på | Kort beskrivning | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| E051 | Ljusdetektiven | Mäta ljus | Baslåda | Upptäckare | E01, B01, B02, R01, S01 | EL07, EL08 | PR14, PR20 | MK07, MK08 | 20–30 min | Ja | E018 | Mät ljusvärden i Seriell monitor och jämför olika platser i rummet. | Kandidat |
+| E052 | Skuggjakten | Mäta ljus | Baslåda | Uppfinnare | E01, B01, B02, R01, L01, S01 | EL07, EL08, EL04 | PR07, PR14 | MK08, MK09 | 25–35 min | Ja | E017, E051 | LED reagerar när handen skuggar ljussensorn. | Kandidat |
+| E053 | Ljusbarometern | Mäta ljus | Baslåda | Ingenjör | E01, B01, B02, R01, L01, S01 | EL07, EL08, EL04 | PR12, PR14, PR20 | MK07, MK09 | 35–45 min | Ja | E051 | Visa ljusnivå med flera LED som en enkel stapelmätare. | Kandidat |
+| E054 | Avstånd i Seriell monitor | Avstånd | Baslåda | Upptäckare | E01, B01, B02, S02 | EL11 | PR20, PR05 | MK07, MK08 | 25–35 min | Ja | E021 | Läs avstånd från HC-SR04 och visa mätvärdet i Seriell monitor. | Kandidat |
+| E055 | Parkeringssensorn v1 | Avstånd | Baslåda | Uppfinnare | E01, B01, B02, R01, L01, A01, S02 | EL11, EL10, EL04 | PR07, PR16 | MK09, MK14 | 35–50 min | Ja | E034, E054 | Buzzern piper snabbare när handen kommer närmare sensorn. | Kandidat |
+| E056 | Avståndslampan | Avstånd | Baslåda | Uppfinnare | E01, B01, B02, R01, L02, S02 | EL11, EL09 | PR07, PR15 | MK09 | 30–45 min | Ja | E024, E054 | RGB-LED visar grönt, gult eller rött beroende på avstånd. | Kandidat |
+| E057 | Osynliga måttbandet | Avstånd | Baslåda | Ingenjör | E01, B01, B02, S02 | EL11 | PR20, PR11 | MK07, MK10 | 35–45 min | Ja | E054 | Mät flera avstånd och jämför med linjal eller måttband. | Kandidat |
+| E058 | Dörrvakten | Magnet och larm | Baslåda | Uppfinnare | E01, B01, B02, R01, L01, A01, S04 | EL12, EL04, EL10 | PR06, PR07 | MK06, MK09 | 30–45 min | Ja | E035 | Reedkontakt och magnet används för att bygga ett enkelt dörrlarm. | Kandidat |
+| E059 | Hemlig skattlåda – sensorversion | Magnet och larm | Baslåda | Ingenjör | E01, B01, B02, R01, L02, A01, S04 | EL12, EL09, EL10 | PR06, PR07, PR17 | MK11, MK14 | 40–55 min | Ja | E032, E058 | Skattlådan reagerar när magnetlåset öppnas och visar status med färg/ljud. | Kandidat |
+| E060 | Skaklarmet | Lutning och rörelse | Baslåda | Uppfinnare | E01, B01, B02, R01, L01, A01, S03 | EL13, EL10, EL04 | PR06, PR07, PR16 | MK06, MK09 | 30–45 min | Ja | E047 | Tilt-sensorn används som skak- eller rörelselarm. | Kandidat |
+| E061 | Lutningsspelet | Lutning och spel | Baslåda | Ingenjör | E01, B01, B02, R01, L01, S03 | EL13, EL04 | PR06, PR07, PR09, PR17 | MK08, MK11 | 40–55 min | Ja | E060 | Barnet styr ett enkelt spel genom att luta eller skaka sensorn. | Kandidat |
+| E062 | Temperatur i rummet | Temperatur | Pluslåda | Upptäckare | E01, B01, B02, S05 | EL15 | PR19, PR20 | MK07, MK08 | 25–35 min | Ja | E051 | Mät temperatur och luftfuktighet med DHT22 i Seriell monitor. | Kandidat |
+| E063 | Väderstation första versionen | Temperatur | Pluslåda | Uppfinnare | E01, B01, B02, S05, D01 | EL14, EL15 | PR19, PR21 | MK07, MK10 | 40–55 min | Ja | E062 | Visa temperatur och luftfuktighet på OLED-display. | Kandidat |
+| E064 | Varmt eller kallt? | Temperatur | Pluslåda | Uppfinnare | E01, B01, B02, R01, L02, S05 | EL15, EL09 | PR07, PR15, PR19 | MK09 | 35–45 min | Ja | E024, E062 | RGB-LED visar blått, grönt eller rött beroende på temperatur. | Kandidat |
+| E065 | Temperaturjämförelsen | Temperatur | Pluslåda | Ingenjör | E01, B01, B02, S05, S06 | EL15 | PR19, PR20 | MK07, MK10 | 45–60 min | Ja | E062 | Jämför mätvärden från DHT22 och DS18B20 och diskutera skillnader. | Kandidat |
+| E066 | Vattentemperatur-testet | Temperatur | Pluslåda | Ingenjör | E01, B01, B02, R01, S06 | EL15 | PR19, PR20 | MK07, MK10 | 40–55 min | Ja | E065 | Mät temperatur i luft och i vatten med DS18B20, med vuxen kontroll. | Kandidat |
+| E067 | Rörelsevakten | Rörelsesensor | Pluslåda | Uppfinnare | E01, B01, B02, R01, L01, A01, S07 | EL16, EL04, EL10 | PR06, PR07, PR16 | MK06, MK09 | 35–50 min | Ja | E058 | PIR-sensorn tänder lampa eller larm när någon rör sig. | Kandidat |
+| E068 | Spökhuset | Rörelsesensor | Pluslåda | Ingenjör | E01, B01, B02, R01, L02, A01, S07 | EL16, EL09, EL10 | PR07, PR17, PR16 | MK11, MK12 | 45–60 min | Ja | E067, E034 | Bygg ett litet spökhus som reagerar med ljus och ljud när någon närmar sig. | Kandidat |
+| E069 | Smart blomkruka v1 | Jordfukt | Pluslåda | Uppfinnare | E01, B01, B02, R01, L01, S08 | EL07, EL08 | PR14, PR07 | MK09, MK10 | 35–50 min | Ja | E051 | Jordfuktighetssensorn varnar när jorden är torr. | Kandidat |
+| E070 | Växtvakten med statusfärg | Jordfukt | Pluslåda | Ingenjör | E01, B01, B02, R01, L02, S08 | EL07, EL08, EL09 | PR14, PR15, PR07 | MK09, MK12 | 40–55 min | Ja | E069, E024 | RGB-LED visar om växten är torr, lagom eller för blöt. | Kandidat |
+| E071 | Ljudnivå i Seriell monitor | Ljudsensor | Pluslåda | Upptäckare | E01, B01, B02, S09 | EL07 | PR14, PR20 | MK07, MK08 | 25–35 min | Ja | E051 | Läs ljudnivåer och se hur värden ändras när man klappar eller pratar. | Kandidat |
+| E072 | Klappströmbrytaren | Ljudsensor | Pluslåda | Ingenjör | E01, B01, B02, R01, L01, S09 | EL07, EL04 | PR14, PR07, PR17 | MK09, MK14 | 40–55 min | Ja | E029, E071 | En klapp växlar en LED mellan på och av. | Kandidat |
+| E073 | Ljusorgel första versionen | Ljudsensor | Pluslåda | Ingenjör | E01, B01, B02, R01, L01, L02, S09 | EL07, EL09 | PR14, PR15, PR12 | MK08, MK09 | 45–60 min | Ja | E071, E023 | Lampor reagerar på ljudnivå och skapar en enkel ljusshow. | Kandidat |
+| E074 | Sensorlaboratoriet | Mätning | Pluslåda | Mästare | E01, B01, B02, R01, L01, L02, S01, S02, S05 | EL07, EL08, EL11, EL15 | PR14, PR19, PR20 | MK07, MK10, MK14 | 60–90 min | Ja | E051–E073 | Jämför flera sensorer och skapa en liten teststation. | Kandidat |
+| E075 | Designa ett eget sensorlarm | Eget projekt | Pluslåda | Mästare | E01, B01, B02, R01, L01, L02, A01, S01, S02, S03, S04, S07 | EL05, EL07, EL11, EL12, EL13, EL16 | PR07, PR16, PR17 | MK11, MK12, MK15 | 60–90 min | Ja | E051–E074 | Barnet väljer sensor och bygger ett eget larm eller varningssystem. | Kandidat |
+
+## Kommentarer
+
+Den här gruppen flyttar boken från lampor, knappar och spel till att mäta och reagera på omvärlden. Fokus ligger på:
+
+- analog inläsning,
+- tröskelvärden och kalibrering,
+- Seriell monitor som mätinstrument,
+- avståndsmätning,
+- larm och statusindikering,
+- temperatur och luftfuktighet,
+- rörelse och närvaro,
+- jordfuktighet,
+- ljudnivå,
+- egna sensorbaserade uppfinningar.
+
+## Preliminär bedömning
+
+E051–E061 kan genomföras med Baslådan. E062–E075 använder Pluslådan eftersom de introducerar DHT22, DS18B20, PIR, jordfuktighetssensor och mikrofonmodul.

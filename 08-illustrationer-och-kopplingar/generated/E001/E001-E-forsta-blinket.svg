@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540">
+  <rect width="1000" height="540" fill="#fffdf8"/>
+  <style>
+    .title{font-family:Arial,sans-serif;font-size:34px;font-weight:bold;fill:#1F5F8B}
+    .label{font-family:Arial,sans-serif;font-size:24px;font-weight:bold;fill:#222}
+    .small{font-family:Arial,sans-serif;font-size:17px;fill:#555}
+    .card{fill:#f8fbfd;stroke:#1F5F8B;stroke-width:3;rx:20}
+    .glow{fill:#ffd54f;opacity:0.45}
+  </style>
+  <rect x="100" y="160" width="350" height="250" class="card"/>
+  <circle cx="275" cy="270" r="95" class="glow"/>
+  <circle cx="275" cy="270" r="55" fill="#ff4d4d" stroke="#9b2226" stroke-width="5"/>
+  <text x="245" y="465" class="label">PÅ</text>
+  <rect x="550" y="160" width="350" height="250" class="card"/>
+  <circle cx="725" cy="270" r="55" fill="#a8a8a8" stroke="#555" stroke-width="5"/>
+  <text x="690" y="465" class="label">AV</text>
+  <text x="300" y="505" class="small">digitalWrite(ledPin, HIGH)</text>
+  <text x="650" y="505" class="small">digitalWrite(ledPin, LOW)</text>
+</svg>

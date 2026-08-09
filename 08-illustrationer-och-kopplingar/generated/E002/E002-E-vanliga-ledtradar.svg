@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+  <rect width="1100" height="700" fill="#ffffff"/>
+  <style>
+    .title{font-family:Arial,sans-serif;font-size:34px;font-weight:bold;fill:#1F5F8B}
+    .label{font-family:Arial,sans-serif;font-size:21px;font-weight:bold;fill:#222}
+    .small{font-family:Arial,sans-serif;font-size:16px;fill:#555}
+    .card{fill:#fff8f0;stroke:#B85C00;stroke-width:3;rx:18}
+    .code{font-family:monospace;font-size:17px;fill:#222}
+  </style>
+
+  <rect x="70" y="145" width="300" height="220" class="card"/>
+  <text x="95" y="185" class="label">Gammal kod kvar?</text>
+  <rect x="105" y="220" width="230" height="95" fill="#f7f7f7" stroke="#ccc" stroke-width="2" rx="8"/>
+  <text x="122" y="250" class="code">delay(1000);</text>
+  <text x="122" y="280" class="code">delay(1000);</text>
+  <text x="95" y="340" class="small">Ladda upp E002-koden igen.</text>
+
+  <rect x="405" y="145" width="300" height="220" class="card"/>
+  <text x="430" y="185" class="label">Fel port?</text>
+  <rect x="455" y="230" width="200" height="80" fill="#f7f7f7" stroke="#ccc" stroke-width="2" rx="8"/>
+  <text x="485" y="278" class="small">Välj samma port som i E001.</text>
+  <text x="430" y="340" class="small">Kontrollera port/kortinställning.</text>
+
+  <rect x="740" y="145" width="300" height="220" class="card"/>
+  <text x="765" y="185" class="label">Rytmen känns annorlunda?</text>
+  <rect x="780" y="235" width="55" height="50" fill="#ffd54f" stroke="#b85c00" stroke-width="2"/>
+  <rect x="845" y="235" width="55" height="50" fill="#e8e8e8" stroke="#777" stroke-width="2"/>
+  <rect x="910" y="235" width="90" height="50" fill="#e8e8e8" stroke="#777" stroke-width="2"/>
+  <text x="765" y="340" class="small">Läs delay-värdena rad för rad.</text>
+
+  <rect x="230" y="430" width="640" height="130" fill="#eaf7f1" stroke="#2E7D61" stroke-width="3" rx="18"/>
+  <text x="270" y="475" class="label">Bra ordning</text>
+  <text x="270" y="510" class="small">1. Kontrollera att rätt kod laddades upp.</text>
+  <text x="270" y="535" class="small">2. Kontrollera port och kort.</text>
+  <text x="270" y="560" class="small">3. Kontrollera kopplingen om det fortfarande inte fungerar.</text>
+</svg>

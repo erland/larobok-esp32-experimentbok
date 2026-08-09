@@ -1,0 +1,116 @@
+experiment: E005
+title: Polisljus
+purpose: Bygg en snabb röd/blå varningssignal där två LED-lampor blinkar i bestämd rytm.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+    - GPIO22
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED_RED
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED_BLUE
+    type: led
+    color: blue
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R_RED
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: R_BLUE
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED_RED.anode
+    description: Signal från ESP32 till röd LED:s långa ben.
+  - from: LED_RED.cathode
+    to: R_RED.pin1
+    description: Röd LED:s korta ben går till sitt motstånd.
+  - from: R_RED.pin2
+    to: ESP32.GND
+    description: Motståndet för röd LED går tillbaka till GND.
+  - from: ESP32.GPIO22
+    to: LED_BLUE.anode
+    description: Signal från ESP32 till blå LED:s långa ben.
+  - from: LED_BLUE.cathode
+    to: R_BLUE.pin1
+    description: Blå LED:s korta ben går till sitt motstånd.
+  - from: R_BLUE.pin2
+    to: ESP32.GND
+    description: Motståndet för blå LED går tillbaka till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> LED_RED.anode -> LED_RED.cathode -> R_RED -> ESP32.GND
+  - ESP32.GPIO22 -> LED_BLUE.anode -> LED_BLUE.cathode -> R_BLUE -> ESP32.GND
+code:
+  pin_constants:
+    redPin: 23
+    bluePin: 22
+  behavior: Röd LED blinkar två gånger, blå LED blinkar två gånger, sedan börjar sekvensen om.
+  sequence:
+    - redPin: HIGH
+      bluePin: LOW
+      duration_ms: 150
+    - redPin: LOW
+      bluePin: LOW
+      duration_ms: 100
+    - redPin: HIGH
+      bluePin: LOW
+      duration_ms: 150
+    - redPin: LOW
+      bluePin: LOW
+      duration_ms: 250
+    - redPin: LOW
+      bluePin: HIGH
+      duration_ms: 150
+    - redPin: LOW
+      bluePin: LOW
+      duration_ms: 100
+    - redPin: LOW
+      bluePin: HIGH
+      duration_ms: 150
+    - redPin: LOW
+      bluePin: LOW
+      duration_ms: 250
+safety:
+  - Varje LED ska ha eget seriemotstånd.
+  - Koppla inte GPIO-pinnar direkt ihop med varandra.
+  - Koppla helst med USB urdragen.
+  - Dra ur USB om något blir varmt eller luktar konstigt.
+  - Använd inte röd/blå blinksignal på fordon eller så att den kan förväxlas med riktig utryckningssignal.
+verification:
+  - Kontrollera att GPIO23 styr röd LED och GPIO22 styr blå LED.
+  - Kontrollera att båda LED-lampor har rätt polaritet.
+  - Kontrollera att båda LED-lampor har varsitt motstånd till GND.
+  - Kontrollera att koden använder pin 23 och 22.
+  - Kontrollera fysisk sekvens: röd -> av -> röd -> av -> blå -> av -> blå -> av -> omstart.
+illustrations:
+  - id: E005-A
+    type: parts_overview
+    source: generated_svg
+  - id: E005-B
+    type: two_led_connection_map
+    source: generated_svg
+  - id: E005-C
+    type: police_light_timeline
+    source: generated_svg
+  - id: E005-D
+    type: troubleshooting
+    source: generated_svg

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+<rect width="1400" height="980" fill="#fffdf7"/>
+<style>
+.t{font-family:Arial, Helvetica, sans-serif}
+.gpio{font-size:15px;font-weight:700;fill:#fff}
+.label{font-size:15px;fill:#333}
+.name{font-size:20px;font-weight:700}
+</style>
+<g transform="translate(70,155)">
+  <rect x="0" y="0" width="250" height="700" rx="4" fill="#2e7250" stroke="#1b4b35" stroke-width="5"/>
+  <rect x="78" y="55" width="88" height="62" rx="4" fill="#222"/>
+  <text class="t" x="95" y="620" font-size="22" fill="#163827">ESP32</text>
+  <rect x="215" y="35" width="110" height="40" rx="3" fill="#ff4a4a"/><text class="t gpio" x="235" y="61">GPIO 23</text>
+  <rect x="215" y="190" width="110" height="40" rx="3" fill="#d6a300"/><text class="t gpio" x="235" y="216">GPIO 22</text>
+  <rect x="215" y="345" width="110" height="40" rx="3" fill="#2f9b48"/><text class="t gpio" x="235" y="371">GPIO 21</text>
+  <rect x="215" y="500" width="110" height="40" rx="3" fill="#2467c2"/><text class="t gpio" x="238" y="526">GPIO 19</text>
+  <rect x="215" y="635" width="88" height="40" rx="3" fill="#222"/><text class="t gpio" x="241" y="661">GND</text>
+</g>
+
+<line x1="1225" y1="190" x2="1225" y2="815" stroke="#202020" stroke-width="8" stroke-linecap="round"/>
+<line x1="373" y1="790" x2="1225" y2="790" stroke="#202020" stroke-width="8" stroke-linecap="round"/>
+<text class="t" x="1160" y="835" font-size="17" fill="#222">gemensam GND</text>
+
+<!-- Row helper: each signal wire ends at long leg x=530, short leg x=610, resistor starts at x=610 -->
+<g>
+  <line x1="395" y1="210" x2="530" y2="210" stroke="#ff4a4a" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="570" cy="140" r="44" fill="#ff4a4a" stroke="#9d2323" stroke-width="5"/>
+  <path d="M545 144 C560 120, 580 120, 595 144" fill="none" stroke="#ffb1b1" stroke-width="8" stroke-linecap="round"/>
+  <line x1="530" y1="178" x2="530" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <line x1="610" y1="178" x2="610" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t name" x="650" y="136" fill="#9d2323">LED 1</text>
+  <text class="t label" x="530" y="241" text-anchor="middle">Långt ben</text>
+  <text class="t label" x="610" y="241" text-anchor="middle">Kort ben</text>
+  <line x1="610" y1="210" x2="770" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <rect x="770" y="185" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+  <line x1="925" y1="210" x2="1225" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t label" x="785" y="267">Motstånd LED 1</text>
+  <text class="t" x="390" y="190" font-size="15" font-weight="700" fill="#ff4a4a">GPIO 23</text>
+</g>
+
+<g transform="translate(0,155)">
+  <line x1="395" y1="210" x2="530" y2="210" stroke="#d6a300" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="570" cy="140" r="44" fill="#ffd34d" stroke="#ad7a00" stroke-width="5"/>
+  <path d="M545 144 C560 120, 580 120, 595 144" fill="none" stroke="#fff0a3" stroke-width="8" stroke-linecap="round"/>
+  <line x1="530" y1="178" x2="530" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <line x1="610" y1="178" x2="610" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t name" x="650" y="136" fill="#8a6200">LED 2</text>
+  <text class="t label" x="530" y="241" text-anchor="middle">Långt ben</text>
+  <text class="t label" x="610" y="241" text-anchor="middle">Kort ben</text>
+  <line x1="610" y1="210" x2="770" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <rect x="770" y="185" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+  <line x1="925" y1="210" x2="1225" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t label" x="785" y="267">Motstånd LED 2</text>
+  <text class="t" x="390" y="190" font-size="15" font-weight="700" fill="#d6a300">GPIO 22</text>
+</g>
+
+<g transform="translate(0,310)">
+  <line x1="395" y1="210" x2="530" y2="210" stroke="#2f9b48" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="570" cy="140" r="44" fill="#54c66a" stroke="#237a34" stroke-width="5"/>
+  <path d="M545 144 C560 120, 580 120, 595 144" fill="none" stroke="#a4efb1" stroke-width="8" stroke-linecap="round"/>
+  <line x1="530" y1="178" x2="530" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <line x1="610" y1="178" x2="610" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t name" x="650" y="136" fill="#237a34">LED 3</text>
+  <text class="t label" x="530" y="241" text-anchor="middle">Långt ben</text>
+  <text class="t label" x="610" y="241" text-anchor="middle">Kort ben</text>
+  <line x1="610" y1="210" x2="770" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <rect x="770" y="185" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+  <line x1="925" y1="210" x2="1225" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t label" x="785" y="267">Motstånd LED 3</text>
+  <text class="t" x="390" y="190" font-size="15" font-weight="700" fill="#2f9b48">GPIO 21</text>
+</g>
+
+<g transform="translate(0,465)">
+  <line x1="395" y1="210" x2="530" y2="210" stroke="#2467c2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="570" cy="140" r="44" fill="#69a7ff" stroke="#2467c2" stroke-width="5"/>
+  <path d="M545 144 C560 120, 580 120, 595 144" fill="none" stroke="#c1d9ff" stroke-width="8" stroke-linecap="round"/>
+  <line x1="530" y1="178" x2="530" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <line x1="610" y1="178" x2="610" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t name" x="650" y="136" fill="#2467c2">LED 4</text>
+  <text class="t label" x="530" y="241" text-anchor="middle">Långt ben</text>
+  <text class="t label" x="610" y="241" text-anchor="middle">Kort ben</text>
+  <line x1="610" y1="210" x2="770" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <rect x="770" y="185" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+  <line x1="925" y1="210" x2="1225" y2="210" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+  <text class="t label" x="785" y="267">Motstånd LED 4</text>
+  <text class="t" x="390" y="190" font-size="15" font-weight="700" fill="#2467c2">GPIO 19</text>
+</g>
+</svg>

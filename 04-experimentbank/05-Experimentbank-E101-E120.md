@@ -1,0 +1,52 @@
+# Steg 3.5 – Experimentbank E101–E120
+
+## Omfattning
+
+Detta är femte och sista delen av experimentbankens bruttolista. Den täcker robotik, motorer, stegmotor, RFID, IR, realtidsklocka, MicroSD, WiFi och större makerprojekt.
+
+Experimenten är fortfarande kandidater. De kan senare flyttas, slås ihop, byta ordning eller tas bort efter komponentanalys och kapitelstruktur.
+
+## Experiment
+
+| ID | Namn | Tema | Komponentnivå | Svårighetsgrad | Komponenter | Elektronikfärdigheter | Programmeringsfärdigheter | Makerfärdigheter | Byggtid | Vuxenhjälp | Bygger på | Kort beskrivning | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| E101 | DC-motor första snurret | Motorer | Makerlåda | Upptäckare | E01, B01, B02, M03, M04 | EL21 | PR03, PR05 | MK06, MK13 | 30–45 min | Ja | E087 | Styr en DC-motor via motordrivare och lär varför motorer inte kopplas direkt till ESP32. | Kandidat |
+| E102 | Motor åt båda hållen | Motorer | Makerlåda | Uppfinnare | E01, B01, B02, M03, M04, K01 | EL21, EL05 | PR06, PR07 | MK13, MK14 | 40–55 min | Ja | E101 | Använd knappar för att låta motorn snurra framåt och bakåt. | Kandidat |
+| E103 | Fartkontroll med PWM | Motorer | Makerlåda | Ingenjör | E01, B01, B02, M03, M04, K02 | EL21, EL07, EL09 | PR14, PR15 | MK08, MK13 | 45–60 min | Ja | E101, E088 | Styr motorhastighet med potentiometer och PWM. | Kandidat |
+| E104 | Mini-fläkten | Motorer och uppfinning | Makerlåda | Uppfinnare | E01, B01, B02, M03, M04, S05 | EL21, EL15 | PR07, PR19 | MK11, MK13 | 45–60 min | Ja | E062, E101 | Bygg en liten temperaturstyrd fläkt med tydlig vuxenkontroll. | Kandidat |
+| E105 | Robotbas första versionen | Robotik | Makerlåda | Ingenjör | E01, B01, B02, M03, M04 | EL21 | PR11, PR17 | MK13, MK14 | 60–90 min | Ja | E102 | Bygg en enkel robotbas eller testplattform med två motorer. | Kandidat |
+| E106 | Robot som undviker hinder | Robotik | Makerlåda | Mästare | E01, B01, B02, S02, M03, M04 | EL11, EL21 | PR07, PR11, PR17, PR18 | MK11, MK13, MK14 | 90–120 min | Ja | E055, E105 | Roboten använder avståndssensor för att undvika hinder. | Kandidat |
+| E107 | Stegmotor första stegen | Stegmotor | Makerlåda | Uppfinnare | E01, B01, B02, M02 | EL22 | PR12, PR19 | MK06, MK13 | 40–55 min | Ja | E087 | Få stegmotorn att gå ett antal steg i taget. | Kandidat |
+| E108 | Mini-karusellen | Stegmotor | Makerlåda | Ingenjör | E01, B01, B02, M02, K01, L02 | EL22, EL05, EL09 | PR06, PR12, PR17, PR19 | MK11, MK12 | 60–75 min | Ja | E107 | Bygg en liten karusell eller roterande scen som startas med knapp. | Kandidat |
+| E109 | RFID första läsningen | RFID | Makerlåda | Upptäckare | E01, B01, B02, C01 | EL23 | PR19, PR20 | MK07, MK10 | 35–50 min | Ja | E076 | Läs ett RFID-kort och visa kortets ID i Seriell monitor. | Kandidat |
+| E110 | RFID-passersystem | RFID | Makerlåda | Ingenjör | E01, B01, B02, C01, L02, A01 | EL23, EL09, EL10 | PR07, PR13, PR17, PR19 | MK11, MK14 | 60–75 min | Ja | E032, E109 | Rätt RFID-tagg ger grön signal, fel tagg ger varning. | Kandidat |
+| E111 | RFID-skattkista | RFID och servo | Makerlåda | Mästare | E01, B01, B02, C01, M01, L02, A01 | EL23, EL20, EL09, EL10 | PR13, PR17, PR18, PR19 | MK11, MK12, MK14 | 75–100 min | Ja | E090, E110 | Skattkistan öppnas med rätt RFID-tagg. | Kandidat |
+| E112 | IR-fjärrens hemliga koder | IR | Makerlåda | Upptäckare | E01, B01, B02, C02 | EL24 | PR19, PR20 | MK07, MK10 | 30–45 min | Ja | E028 | Läs knappkoder från en IR-fjärrkontroll i Seriell monitor. | Kandidat |
+| E113 | Fjärrstyrd lampa | IR | Makerlåda | Uppfinnare | E01, B01, B02, C02, R01, L02 | EL24, EL09 | PR07, PR13, PR17, PR19 | MK11 | 45–60 min | Ja | E024, E112 | IR-fjärrkontrollen styr färg och läge på RGB-LED. | Kandidat |
+| E114 | Fjärrstyrd servo | IR och servo | Makerlåda | Ingenjör | E01, B01, B02, C02, M01 | EL24, EL20 | PR07, PR13, PR17, PR19 | MK11, MK14 | 50–70 min | Ja | E087, E112 | Fjärrkontrollen styr servons lägen. | Kandidat |
+| E115 | Klockan vaknar | Tid | Makerlåda | Uppfinnare | E01, B01, B02, D03, D01 | EL14, EL25 | PR19, PR21 | MK06, MK10 | 45–60 min | Ja | E076 | Visa tid från DS3231 på OLED-display. | Kandidat |
+| E116 | Tidsstyrd påminnare | Tid och smart pryl | Makerlåda | Ingenjör | E01, B01, B02, D03, D01, L02, A01 | EL25, EL14, EL09, EL10 | PR07, PR17, PR19, PR21 | MK11, MK12 | 60–75 min | Ja | E115 | Bygg en liten påminnare som larmar vid en viss tid. | Kandidat |
+| E117 | SD-kort första loggen | Dataloggning | Makerlåda | Ingenjör | E01, B01, B02, D04, S05 | EL15, EL26 | PR19, PR23 | MK10, MK14 | 60–80 min | Ja | E062 | Spara temperaturmätningar till MicroSD-kort. | Kandidat |
+| E118 | Min väderloggare | Dataloggning | Makerlåda | Mästare | E01, B01, B02, D04, D03, S05, D01 | EL15, EL25, EL26, EL14 | PR19, PR21, PR23 | MK10, MK12, MK14 | 90–120 min | Ja | E115, E117 | Logga temperatur/fukt med tidstämpel och visa senaste värde på OLED. | Kandidat |
+| E119 | Första WiFi-sidan | WiFi och IoT | Makerlåda | Ingenjör | E01, B01, B02, R01, L01 | EL04 | PR24, PR25 | MK14 | 60–90 min | Ja | E021 | ESP32 skapar en enkel webbsida som visar status eller styr en LED. | Kandidat |
+| E120 | Familjens smarta uppfinning | Eget Makerprojekt | Makerlåda | Mästare | E01, B01, B02, D01, L02, L03, M01, M03, M04, S01, S02, S05, S07, S08, C01, C02 | EL11, EL14, EL15, EL16, EL18, EL20, EL21, EL23, EL24 | PR17, PR18, PR19, PR24, PR25, PR26 | MK11, MK12, MK13, MK14, MK15 | 120+ min | Ja | E001–E119 | Avslutande familjeprojekt där barnet kombinerar flera tekniker till en egen smart uppfinning. | Kandidat |
+
+## Kommentarer
+
+Den här gruppen är avsiktligt mer avancerad. Den ska fungera som bokens maker- och fördjupningsdel snarare än som startpunkt.
+
+Fokus ligger på:
+
+- motorstyrning,
+- robotik,
+- RFID,
+- IR-fjärrkontroll,
+- realtidsklocka,
+- dataloggning,
+- WiFi,
+- större kombinationsprojekt,
+- strömförsörjning och vuxenkontroll.
+
+## Preliminär bedömning
+
+Samtliga experiment i E101–E120 kräver Makerlådan eller åtminstone delar av den. Flera av projekten bör märkas med tydligt vuxenstöd, särskilt motorer, extern matning och SD-kort/WiFi-konfiguration.

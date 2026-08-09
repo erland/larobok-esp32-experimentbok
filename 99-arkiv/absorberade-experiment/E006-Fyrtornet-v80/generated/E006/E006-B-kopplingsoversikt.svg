@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <rect width="1400" height="780" fill="#fffdf7"/>
+  <style>
+    .small{font-family:Arial, Helvetica, sans-serif;font-size:22px;fill:#333}
+    .label{font-family:Arial, Helvetica, sans-serif;font-size:24px;fill:#333}
+    .gpio{font-family:Arial, Helvetica, sans-serif;font-size:24px;font-weight:700;fill:#fff}
+    .title{font-family:Arial, Helvetica, sans-serif;font-size:28px;font-weight:700;fill:#333}
+  </style>
+
+  <!-- ESP32 -->
+  <g transform="translate(90,115)">
+    <rect x="0" y="0" width="320" height="500" rx="18" fill="#2f7b57" stroke="#164732" stroke-width="7"/>
+    <rect x="104" y="82" width="112" height="86" rx="10" fill="#1f1f1f"/>
+    <text x="112" y="420" font-family="Arial, Helvetica, sans-serif" font-size="56" fill="#133c2b">ESP32</text>
+
+    <rect x="250" y="220" width="214" height="62" rx="11" fill="#f39a27"/>
+    <text class="gpio" x="291" y="260">GPIO 23</text>
+
+    <rect x="168" y="382" width="138" height="64" rx="11" fill="#222"/>
+    <text class="gpio" x="214" y="424">GND</text>
+  </g>
+
+  <!-- signal wire -->
+  <line x1="554" y1="366" x2="710" y2="366" stroke="#f39a27" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="710,366 686,353 686,379" fill="#f39a27"/>
+
+  <!-- LED -->
+  <g transform="translate(664,170)">
+    <circle cx="72" cy="84" r="64" fill="#f4cf4e" stroke="#a87900" stroke-width="6"/>
+    <path d="M30 92 C47 50, 95 50, 114 92" fill="none" stroke="#ffe7a3" stroke-width="11" stroke-linecap="round"/>
+    <line x1="51" y1="150" x2="51" y2="196" stroke="#666" stroke-width="9" stroke-linecap="round"/>
+    <line x1="93" y1="150" x2="93" y2="196" stroke="#666" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text class="title" x="836" y="250">LED-lampa</text>
+  <text class="label" x="650" y="416">Långt ben</text>
+  <text class="label" x="772" y="416">Kort ben</text>
+
+  <!-- resistor path -->
+  <line x1="757" y1="366" x2="920" y2="366" stroke="#666" stroke-width="8" stroke-linecap="round"/>
+  <g transform="translate(920,322)">
+    <rect x="0" y="0" width="196" height="88" rx="18" fill="#d7b28c" stroke="#95653d" stroke-width="5"/>
+    <line x1="46" y1="14" x2="46" y2="74" stroke="#77401d" stroke-width="6"/>
+    <line x1="98" y1="14" x2="98" y2="74" stroke="#d33" stroke-width="6"/>
+    <line x1="150" y1="14" x2="150" y2="74" stroke="#d5a119" stroke-width="6"/>
+  </g>
+  <text class="label" x="932" y="458">Motstånd 220–330 Ω</text>
+  <line x1="1116" y1="366" x2="1240" y2="366" stroke="#666" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- ground rail -->
+  <line x1="500" y1="530" x2="1240" y2="530" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1240" y1="366" x2="1240" y2="550" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+  <text class="label" x="1106" y="588">gemensam GND</text>
+</svg>

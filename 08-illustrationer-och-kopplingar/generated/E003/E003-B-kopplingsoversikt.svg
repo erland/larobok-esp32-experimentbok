@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#fffdf7"/>
+<g transform="translate(70,165)">
+  <rect x="0" y="0" width="250" height="470" rx="4" fill="#2e7250" stroke="#1b4b35" stroke-width="5"/>
+  <rect x="78" y="55" width="88" height="62" rx="4" fill="#222"/>
+  <text x="95" y="375" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#163827">ESP32</text>
+<rect x="215" y="45" width="110" height="40" rx="3" fill="#ff9d28"/>
+<text x="235" y="71" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#fff">GPIO 23</text>
+<rect x="215" y="235" width="110" height="40" rx="3" fill="#2d9bd2"/>
+<text x="235" y="261" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#fff">GPIO 22</text>
+<rect x="215" y="415" width="88" height="40" rx="3" fill="#222"/>
+<text x="241" y="441" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#fff">GND</text>
+</g>
+<line x1="1060" y1="195" x2="1060" y2="615" stroke="#202020" stroke-width="8" stroke-linecap="round"/>
+<line x1="373" y1="600" x2="1060" y2="600" stroke="#202020" stroke-width="8" stroke-linecap="round"/>
+<text x="1000" y="642" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#222" text-anchor="start">gemensam GND</text>
+<line x1="395" y1="230" x2="520" y2="230" stroke="#ff9d28" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="560" cy="160" r="44" fill="#ff4a4a" stroke="#9d2323" stroke-width="5"/>
+    <path d="M535 164 C550 140, 570 140, 585 164" fill="none" stroke="#ffb1b1" stroke-width="8" stroke-linecap="round"/>
+    <line x1="520" y1="198" x2="520" y2="230" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <line x1="600" y1="198" x2="600" y2="230" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <text x="640" y="155" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#9d2323">LED 1</text>
+    <text x="520" y="261" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333" text-anchor="middle">Långt ben</text>
+    <text x="600" y="261" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333" text-anchor="middle">Kort ben</text>
+  </g>
+
+  <g transform="translate(720,205)">
+    <line x1="-120" y1="25" x2="0" y2="25" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <rect x="0" y="0" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+    <line x1="155" y1="25" x2="340" y2="25" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <text x="18" y="82" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">Motstånd 1 220–330 Ω</text>
+  </g>
+<text x="390" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ff9d28" text-anchor="start">GPIO 23</text>
+<path d="M425 222 L442 230 L425 238" fill="none" stroke="#ff9d28" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="395" y1="420" x2="520" y2="420" stroke="#2d9bd2" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="560" cy="350" r="44" fill="#ffd34d" stroke="#ad7a00" stroke-width="5"/>
+    <path d="M535 354 C550 330, 570 330, 585 354" fill="none" stroke="#fff0a3" stroke-width="8" stroke-linecap="round"/>
+    <line x1="520" y1="388" x2="520" y2="420" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <line x1="600" y1="388" x2="600" y2="420" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <text x="640" y="345" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#8a6200">LED 2</text>
+    <text x="520" y="451" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333" text-anchor="middle">Långt ben</text>
+    <text x="600" y="451" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333" text-anchor="middle">Kort ben</text>
+  </g>
+
+  <g transform="translate(720,395)">
+    <line x1="-120" y1="25" x2="0" y2="25" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <rect x="0" y="0" width="155" height="50" rx="12" fill="#d8b18b" stroke="#885f3c" stroke-width="4"/>
+    <line x1="155" y1="25" x2="340" y2="25" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+    <text x="18" y="82" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">Motstånd 2 220–330 Ω</text>
+  </g>
+<text x="390" y="400" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#2d9bd2" text-anchor="start">GPIO 22</text>
+<path d="M425 412 L442 420 L425 428" fill="none" stroke="#2d9bd2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

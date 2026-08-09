@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .card{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:24px;font-weight:700}
+    .s{font-size:18px;fill:#555}
+    .code{font-family:DejaVu Sans Mono, monospace;font-size:18px;fill:#222}
+  </style>
+
+  <g transform="translate(80,70)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Röd</text>
+    <text class="t code" x="128" y="88">255, 0, 0</text>
+  </g>
+
+  <g transform="translate(475,70)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#43b94a" stroke="#1e7930" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Grön</text>
+    <text class="t code" x="128" y="88">0, 255, 0</text>
+  </g>
+
+  <g transform="translate(870,70)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#3d7eff" stroke="#214a93" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Blå</text>
+    <text class="t code" x="128" y="88">0, 0, 255</text>
+  </g>
+
+  <g transform="translate(80,300)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Gulaktig</text>
+    <text class="t code" x="128" y="88">255, 160, 0</text>
+  </g>
+
+  <g transform="translate(475,300)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#9b4dff" stroke="#5a249c" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Lila</text>
+    <text class="t code" x="128" y="88">180, 0, 255</text>
+  </g>
+
+  <g transform="translate(870,300)">
+    <rect class="card" x="0" y="0" width="330" height="150" rx="14"/>
+    <circle cx="68" cy="62" r="38" fill="#f1f1e8" stroke="#b7b7a2" stroke-width="4"/>
+    <text class="t h" x="128" y="50">Vitaktig</text>
+    <text class="t code" x="128" y="88">180, 180, 180</text>
+  </g>
+
+  <text class="t s" x="440" y="520">setColor(röd, grön, blå)</text>
+</svg>

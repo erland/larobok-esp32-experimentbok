@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+  <rect width="1200" height="390" fill="#fffdf7"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#777"/></marker></defs>
+  <style>.card{fill:#f4f9fc;stroke:#1f6688;stroke-width:4;rx:12}.t{font-family:Arial, Helvetica, sans-serif;fill:#222}.h{font-size:24px;font-weight:700}.s{font-size:17px;fill:#444}</style>
+  <g transform="translate(85,100)"><rect class="card" width="180" height="175"/><circle cx="90" cy="65" r="36" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/><text class="t h" x="73" y="150">PÅ</text><text class="t s" x="63" y="196">150 ms</text></g>
+  <g transform="translate(325,100)"><rect class="card" width="180" height="175"/><circle cx="90" cy="65" r="36" fill="#e8e8e8" stroke="#777" stroke-width="4"/><text class="t h" x="72" y="150">AV</text><text class="t s" x="63" y="196">150 ms</text></g>
+  <g transform="translate(565,100)"><rect class="card" width="180" height="175"/><circle cx="90" cy="65" r="36" fill="#ffd34d" stroke="#ad7a00" stroke-width="4"/><text class="t h" x="73" y="150">PÅ</text><text class="t s" x="63" y="196">150 ms</text></g>
+  <g transform="translate(805,100)"><rect class="card" width="220" height="175"/><circle cx="110" cy="65" r="36" fill="#e8e8e8" stroke="#777" stroke-width="4"/><text class="t h" x="92" y="150">AV</text><text class="t s" x="83" y="196">700 ms</text><text class="t s" x="87" y="225">paus</text></g>
+  <line x1="265" y1="188" x2="315" y2="188" stroke="#777" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="505" y1="188" x2="555" y2="188" stroke="#777" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="745" y1="188" x2="795" y2="188" stroke="#777" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1025 188 C1115 188, 1125 315, 960 330 L 280 330 C 180 330, 120 285, 95 188" fill="none" stroke="#777" stroke-width="4" marker-end="url(#arrow)"/>
+  <text class="t s" x="1030" y="170">börja om</text>
+</svg>

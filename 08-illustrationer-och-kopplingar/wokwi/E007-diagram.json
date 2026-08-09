@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRed",
+      "top": -70,
+      "left": 240,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRed",
+      "top": 5,
+      "left": 240,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledYellow",
+      "top": -70,
+      "left": 370,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rYellow",
+      "top": 5,
+      "left": 370,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledGreen",
+      "top": -70,
+      "left": 500,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rGreen",
+      "top": 5,
+      "left": 500,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "ledRed:A",
+      "red",
+      [
+        "h45",
+        "v-75",
+        "h140"
+      ]
+    ],
+    [
+      "ledRed:C",
+      "rRed:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "rRed:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-110",
+        "v75",
+        "h-90"
+      ]
+    ],
+    [
+      "esp:22",
+      "ledYellow:A",
+      "yellow",
+      [
+        "h60",
+        "v-95",
+        "h270"
+      ]
+    ],
+    [
+      "ledYellow:C",
+      "rYellow:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "rYellow:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-250",
+        "v90",
+        "h-90"
+      ]
+    ],
+    [
+      "esp:21",
+      "ledGreen:A",
+      "green",
+      [
+        "h75",
+        "v-115",
+        "h400"
+      ]
+    ],
+    [
+      "ledGreen:C",
+      "rGreen:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "rGreen:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-390",
+        "v105",
+        "h-90"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E007 återanvänder tre LED från E004. GPIO23 styr röd LED, GPIO22 gul LED och GPIO21 grön LED. Koden introducerar funktionen lightOne(pin)."
+}

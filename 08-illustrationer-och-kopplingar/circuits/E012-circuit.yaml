@@ -1,0 +1,107 @@
+experiment: E012
+title: Färgblandaren
+purpose: Återanvänd RGB-LED-kopplingen från E011 och introducera PWM/analogWrite som 0–255-ljusstyrka för färgblandning.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+    - GPIO22
+    - GPIO21
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: RGB1
+    type: rgb-led-common-cathode
+    role: output
+    channels:
+      red: anode
+      green: anode
+      blue: anode
+      common: cathode
+  - id: R1
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit_red
+  - id: R2
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit_green
+  - id: R3
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit_blue
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: R1.pin1
+    description: Röd kanal styrs från GPIO23.
+  - from: R1.pin2
+    to: RGB1.red
+    description: Motståndet för röd kanal går till det röda benet.
+  - from: ESP32.GPIO22
+    to: R2.pin1
+    description: Grön kanal styrs från GPIO22.
+  - from: R2.pin2
+    to: RGB1.green
+    description: Motståndet för grön kanal går till det gröna benet.
+  - from: ESP32.GPIO21
+    to: R3.pin1
+    description: Blå kanal styrs från GPIO21.
+  - from: R3.pin2
+    to: RGB1.blue
+    description: Motståndet för blå kanal går till det blå benet.
+  - from: RGB1.common
+    to: ESP32.GND
+    description: RGB-LED:ens gemensamma ben går till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> R1 -> RGB1.red -> RGB1.common -> ESP32.GND
+  - ESP32.GPIO22 -> R2 -> RGB1.green -> RGB1.common -> ESP32.GND
+  - ESP32.GPIO21 -> R3 -> RGB1.blue -> RGB1.common -> ESP32.GND
+code:
+  pin_constants:
+    redPin: 23
+    greenPin: 22
+    bluePin: 21
+  new_ideas:
+    - PWM som upplevd ljusstyrka
+    - analogWrite med värden 0-255
+    - färgrecept med tre värden
+  function:
+    name: setColor
+    parameters:
+      - red
+      - green
+      - blue
+  example_colors:
+    red: [255, 0, 0]
+    green: [0, 255, 0]
+    blue: [0, 0, 255]
+    yellowish: [255, 160, 0]
+    purple: [180, 0, 255]
+    whitish: [180, 180, 180]
+safety:
+  - Varje färgkanal ska ha eget seriemotstånd.
+  - Common cathode-ben går till GND i projektets standard.
+  - Koppla helst med USB urdragen.
+verification:
+  - Kontrollera att kopplingen fungerar med E011-koden innan PWM testas.
+  - Testa röd/grön/blå var för sig om blandade färger ser fel ut.
+  - Verifiera `analogWrite()` mot vald ESP32/Arduino-version.
+illustrations:
+  - id: E012-A
+    type: parts_overview
+    source: generated_svg
+  - id: E012-B
+    type: rgb_led_connection_map
+    source: generated_svg
+  - id: E012-C
+    type: color_recipe_cards
+    source: generated_svg
+  - id: E012-D
+    type: pwm_concept
+    source: generated_svg

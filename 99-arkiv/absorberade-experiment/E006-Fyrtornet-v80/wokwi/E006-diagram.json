@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -60,
+      "left": 250,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 15,
+      "left": 250,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "led1:A",
+      "orange",
+      [
+        "h45",
+        "v-75",
+        "h150"
+      ]
+    ],
+    [
+      "led1:C",
+      "r1:1",
+      "green",
+      [
+        "v35"
+      ]
+    ],
+    [
+      "r1:2",
+      "esp:GND.1",
+      "black",
+      [
+        "h-120",
+        "v80",
+        "h-90"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E006 bygger ett fyrtornsliknande blinkmönster med en LED på GPIO23 och motstånd till GND."
+}

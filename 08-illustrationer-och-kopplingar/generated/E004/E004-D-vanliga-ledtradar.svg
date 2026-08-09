@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#fffdf7"/>
+<g transform="translate(90,155)">
+  <rect x="0" y="0" width="300" height="200" fill="#fff5e6" stroke="#c46b18" stroke-width="4"/>
+  <text x="25" y="38" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#333">Fel färg?</text>
+  <circle cx="72" cy="95" r="24" fill="#ff4a4a" stroke="#9d2323" stroke-width="3"/><circle cx="135" cy="95" r="24" fill="#ffd34d" stroke="#ad7a00" stroke-width="3"/><circle cx="198" cy="95" r="24" fill="#54c66a" stroke="#237a34" stroke-width="3"/>
+  <text x="25" y="155" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">Kontrollera röd 23, gul 22, grön 21.</text>
+</g>
+<g transform="translate(450,155)">
+  <rect x="0" y="0" width="300" height="200" fill="#fff5e6" stroke="#c46b18" stroke-width="4"/>
+  <text x="25" y="38" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#333">En färg saknas?</text>
+  <line x1="45" y1="110" x2="225" y2="110" stroke="#555" stroke-width="5"/><circle cx="80" cy="110" r="28" fill="#ddd" stroke="#777" stroke-width="3"/><text x="25" y="160" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">Följ bara den färgens väg till GND.</text>
+</g>
+<g transform="translate(810,155)">
+  <rect x="0" y="0" width="300" height="200" fill="#fff5e6" stroke="#c46b18" stroke-width="4"/>
+  <text x="25" y="38" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#333">Två lyser?</text>
+  <rect x="55" y="70" width="190" height="82" rx="8" fill="#f7f7f7" stroke="#bbb" stroke-width="3"/>
+  <text x="75" y="102" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">digitalWrite(...)</text>
+  <text x="75" y="130" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333">HIGH / LOW</text>
+  <text x="25" y="175" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">Läs släck-raderna i samma steg.</text>
+</g>
+<g transform="translate(180,420)">
+  <rect x="0" y="0" width="840" height="180" rx="18" fill="#e8f7ef" stroke="#24805a" stroke-width="4"/>
+  <text x="35" y="45" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#333">Bra ordning</text>
+  <text x="35" y="85" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333">1. Välj en färg som inte fungerar.</text>
+  <text x="35" y="120" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333">2. Följ vägen: GPIO → långt ben → kort ben → motstånd → GND.</text>
+  <text x="35" y="155" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333">3. Kontrollera sedan koden för just den färgen.</text>
+</g>
+</svg>

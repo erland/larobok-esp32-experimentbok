@@ -1,0 +1,79 @@
+experiment: E009
+title: Hemlig blinkkod
+classification: Bonusprojekt
+purpose: Använd en LED för att skicka ett enkelt hemligt meddelande med korta och långa blinkningar.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED1
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R1
+    type: resistor
+    value: 220-330 Ω
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED1.anode
+    description: Signal från ESP32 till LED-lampans långa ben.
+  - from: LED1.cathode
+    to: R1.pin1
+    description: LED-lampans korta ben går till motståndet.
+  - from: R1.pin2
+    to: ESP32.GND
+    description: Motståndet går tillbaka till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> LED1.anode -> LED1.cathode -> R1 -> ESP32.GND
+code:
+  pin_constants:
+    ledPin: 23
+  new_ideas:
+    - kort blinkning som tecken
+    - lång blinkning som tecken
+    - paus som del av meddelande
+  functions:
+    - shortBlink
+    - longBlink
+    - pauseBetweenMessages
+  example_message:
+    meaning: HEJ
+    pattern:
+      - shortBlink
+      - longBlink
+      - shortBlink
+safety:
+  - LED ska ha seriemotstånd.
+  - Koppla inte GPIO direkt till GND utan LED och motstånd i serie.
+  - Koppla helst med USB urdragen.
+verification:
+  - Kontrollera GPIO23 till LED långt ben.
+  - Kontrollera LED kort ben till motstånd och motstånd till GND.
+  - Kontrollera att kort blinkning är märkbart kortare än lång blinkning.
+  - Kontrollera att pausen mellan meddelanden är tillräckligt lång för att läsa mönstret.
+illustrations:
+  - id: E009-A
+    type: parts_overview
+    source: generated_svg
+  - id: E009-B
+    type: single_led_connection_map
+    source: generated_svg
+  - id: E009-C
+    type: blink_message_sequence
+    source: generated_svg
+  - id: E009-D
+    type: secret_blink_code_table
+    source: generated_svg

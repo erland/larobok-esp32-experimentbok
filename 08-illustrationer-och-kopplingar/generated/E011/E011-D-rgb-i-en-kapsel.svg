@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:28px;font-weight:700}
+    .s{font-size:20px;fill:#444}
+    .small{font-size:17px;fill:#555}
+    .note{font-size:18px;font-weight:700;fill:#333}
+  </style>
+  <g transform="translate(80,50)">
+    <rect class="panel" x="0" y="0" width="1120" height="460" rx="18"/>
+    <text class="t h" x="40" y="56">RGB-LED = tre färgkanaler + ett gemensamt ben</text>
+    <text class="t small" x="42" y="88">Inuti samma kapsel finns rött, grönt och blått ljus.</text>
+
+    <g transform="translate(125,140)">
+      <circle cx="230" cy="100" r="110" fill="#f4f4f4" stroke="#777" stroke-width="6"/>
+      <path d="M165 115 C200 55, 260 55, 295 115" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="186" cy="118" r="30" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+      <circle cx="230" cy="88" r="30" fill="#43b94a" stroke="#1e7930" stroke-width="4"/>
+      <circle cx="274" cy="118" r="30" fill="#3d7eff" stroke="#214a93" stroke-width="4"/>
+      <line x1="176" y1="210" x2="176" y2="330" stroke="#666" stroke-width="8"/>
+      <line x1="212" y1="210" x2="212" y2="330" stroke="#666" stroke-width="8"/>
+      <line x1="248" y1="210" x2="248" y2="330" stroke="#666" stroke-width="8"/>
+      <line x1="286" y1="210" x2="286" y2="360" stroke="#444" stroke-width="9"/>
+      <text class="t s" x="164" y="360">R</text>
+      <text class="t s" x="198" y="360">G</text>
+      <text class="t s" x="236" y="360">B</text>
+      <path d="M316 275 Q348 270 370 290" fill="none" stroke="#444" stroke-width="3" stroke-linecap="round"/>
+      <text class="t note" x="372" y="288">Gemensamt ben</text>
+      <text class="t small" x="372" y="314">det delas av alla tre</text>
+    </g>
+
+    <g transform="translate(645,140)">
+      <rect x="0" y="0" width="390" height="260" rx="16" fill="#ffffff" stroke="#1f6b90" stroke-width="3"/>
+      <text class="t h" x="28" y="48">Så kan du tänka</text>
+      <text class="t s" x="28" y="94">R = röd kanal</text>
+      <text class="t s" x="28" y="132">G = grön kanal</text>
+      <text class="t s" x="28" y="170">B = blå kanal</text>
+      <text class="t s" x="28" y="208">Gemensamt ben = ett ben som</text>
+      <text class="t s" x="28" y="240">alla tre färgerna delar</text>
+    </g>
+  </g>
+</svg>

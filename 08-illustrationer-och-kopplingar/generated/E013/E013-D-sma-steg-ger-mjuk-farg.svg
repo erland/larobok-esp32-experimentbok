@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fffdf7"/>
+  <style>
+    .panel{fill:#f5f9fc;stroke:#1f6b90;stroke-width:4}
+    .box{fill:#fff;stroke:#1f6b90;stroke-width:3}
+    .t{font-family:Arial, Helvetica, sans-serif;fill:#222}
+    .h{font-size:30px;font-weight:700}
+    .s{font-size:22px;fill:#444}
+    .small{font-size:18px;fill:#555}
+    .code{font-family:DejaVu Sans Mono, monospace;font-size:22px;fill:#222}
+    .note{font-size:22px;font-weight:700;fill:#333}
+    .arrow{stroke:#ad7a00;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrowhead{fill:#ad7a00}
+  </style>
+  <g transform="translate(70,55)">
+    <rect class="panel" x="0" y="0" width="1140" height="450" rx="18"/>
+    <text class="t h" x="36" y="50">Små steg ger mjukare färg</text>
+    <text class="t small" x="36" y="84">Här blir det mer och mer grönt medan rött ligger kvar högt.</text>
+
+    <g transform="translate(70,145)">
+      <g transform="translate(0,0)">
+        <rect class="box" x="0" y="0" width="180" height="170" rx="14"/>
+        <circle cx="90" cy="58" r="32" fill="#ff4a4a" stroke="#9d2323" stroke-width="4"/>
+        <text class="code" x="23" y="128">255, 0, 0</text>
+        <text class="t small" x="60" y="155">röd</text>
+      </g>
+      <g transform="translate(220,0)">
+        <rect class="box" x="0" y="0" width="180" height="170" rx="14"/>
+        <circle cx="90" cy="58" r="32" fill="#ff7e2f" stroke="#c26300" stroke-width="4"/>
+        <text class="code" x="13" y="128">255, 80, 0</text>
+        <text class="t small" x="50" y="155">orange</text>
+      </g>
+      <g transform="translate(440,0)">
+        <rect class="box" x="0" y="0" width="180" height="170" rx="14"/>
+        <circle cx="90" cy="58" r="32" fill="#ffb733" stroke="#ad7a00" stroke-width="4"/>
+        <text class="code" x="3" y="128">255, 180, 0</text>
+        <text class="t small" x="46" y="155">mellan</text>
+      </g>
+      <g transform="translate(660,0)">
+        <rect class="box" x="0" y="0" width="180" height="170" rx="14"/>
+        <circle cx="90" cy="58" r="32" fill="#ffe04d" stroke="#ad7a00" stroke-width="4"/>
+        <text class="code" x="3" y="128">255, 255, 0</text>
+        <text class="t small" x="66" y="155">gul</text>
+      </g>
+
+      <path class="arrow" d="M181 58 H215"/>
+      <polygon class="arrowhead" points="215,58 203,52 203,64"/>
+      <path class="arrow" d="M401 58 H435"/>
+      <polygon class="arrowhead" points="435,58 423,52 423,64"/>
+      <path class="arrow" d="M621 58 H655"/>
+      <polygon class="arrowhead" points="655,58 643,52 643,64"/>
+    </g>
+
+    <g transform="translate(170,345)">
+      <rect class="box" x="0" y="0" width="760" height="90" rx="16"/>
+      <text class="t note" x="26" y="33">Så kan du tänka</text>
+      <text class="t small" x="28" y="64">Samma rött → lite mer grönt → färgen flyttar sig steg för steg.</text>
+    </g>
+  </g>
+</svg>

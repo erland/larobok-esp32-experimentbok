@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -60,
+      "left": 270,
+      "attrs": {
+        "common": "cathode"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -20,
+      "left": 180,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 30,
+      "left": 180,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 80,
+      "left": 180,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:23",
+      "r1:1",
+      "red",
+      [
+        "h20",
+        "v-20",
+        "h35"
+      ]
+    ],
+    [
+      "r1:2",
+      "rgb1:R",
+      "red",
+      [
+        "h25"
+      ]
+    ],
+    [
+      "esp:22",
+      "r2:1",
+      "green",
+      [
+        "h20",
+        "v0",
+        "h35"
+      ]
+    ],
+    [
+      "r2:2",
+      "rgb1:G",
+      "green",
+      [
+        "h25"
+      ]
+    ],
+    [
+      "esp:21",
+      "r3:1",
+      "blue",
+      [
+        "h20",
+        "v20",
+        "h35"
+      ]
+    ],
+    [
+      "r3:2",
+      "rgb1:B",
+      "blue",
+      [
+        "h25"
+      ]
+    ],
+    [
+      "rgb1:COM",
+      "esp:GND.1",
+      "black",
+      [
+        "v80",
+        "h-190"
+      ]
+    ]
+  ],
+  "dependencies": {},
+  "notes": "E012 återanvänder E011-kopplingen och använder analogWrite/setColor för färgblandning med 0–255-värden."
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "ESP32 Experimentbok",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledRed", "top": -70, "left": 220, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "rRed", "top": 5, "left": 220, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "ledYellow", "top": -70, "left": 335, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-resistor", "id": "rYellow", "top": 5, "left": 335, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "ledGreen", "top": -70, "left": 450, "attrs": { "color": "green" } },
+    { "type": "wokwi-resistor", "id": "rGreen", "top": 5, "left": 450, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    ["esp:23", "ledRed:A", "orange", ["h45", "v-75", "h120"]],
+    ["ledRed:C", "rRed:1", "green", ["v35"]],
+    ["rRed:2", "esp:GND.1", "black", ["h-90", "v75", "h-90"]],
+    ["esp:22", "ledYellow:A", "blue", ["h60", "v-95", "h230"]],
+    ["ledYellow:C", "rYellow:1", "green", ["v35"]],
+    ["rYellow:2", "esp:GND.1", "black", ["h-210", "v90", "h-90"]],
+    ["esp:21", "ledGreen:A", "purple", ["h75", "v-115", "h340"]],
+    ["ledGreen:C", "rGreen:1", "green", ["v35"]],
+    ["rGreen:2", "esp:GND.1", "black", ["h-330", "v105", "h-90"]]
+  ],
+  "dependencies": {},
+  "notes": "E004 bygger ett mini-trafikljus. GPIO23 styr röd LED, GPIO22 styr gul LED och GPIO21 styr grön LED. Varje LED har eget motstånd till GND."
+}

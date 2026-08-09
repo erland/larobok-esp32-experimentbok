@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <rect width="1100" height="620" fill="#ffffff"/>
+  <style>
+    .title{font-family:Arial,sans-serif;font-size:34px;font-weight:bold;fill:#1F5F8B}
+    .label{font-family:Arial,sans-serif;font-size:23px;font-weight:bold;fill:#222}
+    .small{font-family:Arial,sans-serif;font-size:16px;fill:#555}
+    .card{fill:#f8fbfd;stroke:#1F5F8B;stroke-width:3;rx:20}
+    .arrow{stroke:#2E7D61;stroke-width:7;fill:none;marker-end:url(#arrow)}
+    .on{fill:#ffd54f;stroke:#b85c00;stroke-width:3}
+    .off{fill:#e8e8e8;stroke:#777;stroke-width:3}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#2E7D61"/>
+    </marker>
+  </defs>
+  <text x="55" y="70" class="title">Samma koppling – ny kod</text>
+  <rect x="80" y="150" width="380" height="310" class="card"/>
+  <text x="125" y="205" class="label">Kopplingen</text>
+  <text x="125" y="240" class="small">GPIO 23 → LED → motstånd → GND</text>
+  <circle cx="270" cy="335" r="45" fill="#ff4d4d" stroke="#9b2226" stroke-width="5"/>
+  <line x1="180" y1="335" x2="225" y2="335" stroke="#f28c28" stroke-width="8"/>
+  <line x1="315" y1="335" x2="370" y2="335" stroke="#777" stroke-width="6"/>
+  <rect x="370" y="315" width="70" height="40" fill="#d6b48f" stroke="#7f5539" stroke-width="3" rx="8"/>
+
+  <path d="M485 305 C550 260 575 260 640 305" class="arrow"/>
+
+  <rect x="650" y="150" width="380" height="310" class="card"/>
+  <text x="695" y="205" class="label">Rytmen</text>
+  <text x="695" y="240" class="small">Koden skapar blink-blink-paus</text>
+  <rect x="720" y="310" width="70" height="70" class="on"/>
+  <rect x="800" y="310" width="70" height="70" class="off"/>
+  <rect x="880" y="310" width="70" height="70" class="on"/>
+  <rect x="720" y="395" width="230" height="25" class="off"/>
+  <text x="55" y="560" class="small">Teknisk sanningskälla: E002-circuit.yaml. Bilden visar idén, inte exakt breadboardlayout.</text>
+</svg>

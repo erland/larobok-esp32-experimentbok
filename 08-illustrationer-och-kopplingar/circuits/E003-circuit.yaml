@@ -1,0 +1,97 @@
+experiment: E003
+title: Två LED turas om
+purpose: Första experimentet där ESP32 styr två utgångar i en sekvens så att ljuset upplevs röra sig.
+board:
+  type: ESP32 DevKit
+  logic_voltage: 3.3V
+  selected_gpio:
+    - GPIO23
+    - GPIO22
+components:
+  - id: ESP32
+    type: esp32-devkit
+    role: microcontroller
+  - id: LED1
+    type: led
+    color: red
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: LED2
+    type: led
+    color: yellow
+    role: output
+    polarity:
+      anode: long_leg
+      cathode: short_leg
+  - id: R1
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: R2
+    type: resistor
+    value: 220-330 ohm
+    role: current_limit
+  - id: BB1
+    type: breadboard
+  - id: USB1
+    type: usb-cable
+connections:
+  - from: ESP32.GPIO23
+    to: LED1.anode
+    description: Signal från ESP32 till LED 1:s långa ben.
+  - from: LED1.cathode
+    to: R1.pin1
+    description: LED 1:s korta ben går till sitt motstånd.
+  - from: R1.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 1 går tillbaka till GND.
+  - from: ESP32.GPIO22
+    to: LED2.anode
+    description: Signal från ESP32 till LED 2:s långa ben.
+  - from: LED2.cathode
+    to: R2.pin1
+    description: LED 2:s korta ben går till sitt motstånd.
+  - from: R2.pin2
+    to: ESP32.GND
+    description: Motståndet för LED 2 går tillbaka till GND.
+canonical_paths:
+  - ESP32.GPIO23 -> LED1.anode -> LED1.cathode -> R1 -> ESP32.GND
+  - ESP32.GPIO22 -> LED2.anode -> LED2.cathode -> R2 -> ESP32.GND
+code:
+  pin_constants:
+    ledPin1: 23
+    ledPin2: 22
+  behavior: LED 1 och LED 2 turas om med 500 ms intervall.
+  sequence:
+    - ledPin1: HIGH
+      ledPin2: LOW
+      duration_ms: 500
+    - ledPin1: LOW
+      ledPin2: HIGH
+      duration_ms: 500
+safety:
+  - Varje LED ska ha eget seriemotstånd.
+  - Koppla inte två GPIO-pinnar direkt till varandra.
+  - Koppla helst med USB urdragen.
+  - Dra ur USB om något blir varmt.
+verification:
+  - Kontrollera att GPIO23 styr LED 1 och GPIO22 styr LED 2.
+  - Kontrollera att båda LED-lamporna har rätt polaritet.
+  - Kontrollera att båda LED-lamporna har varsitt motstånd till GND.
+  - Kontrollera att koden använder pin 23 och 22.
+  - Kontrollera fysisk växling mellan LED 1 och LED 2.
+illustrations:
+  - id: E003-A
+    type: parts_overview
+    source: generated_svg
+  - id: E003-B
+    type: two_led_connection_map
+    source: generated_svg
+  - id: E003-C
+    type: alternating_timeline
+    source: generated_svg
+  - id: E003-D
+    type: troubleshooting
+    source: generated_svg
