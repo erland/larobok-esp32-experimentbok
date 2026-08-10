@@ -1,0 +1,51 @@
+name: Validate
+
+on:
+  pull_request:
+    paths:
+      - "00-projektstyrning/**"
+      - "01-designprinciper/**"
+      - "02-komponentlada/**"
+      - "03-fardighetskarta/**"
+      - "04-experimentbank/**"
+      - "05-beroenden-och-matris/**"
+      - "06-kapitelstruktur/**"
+      - "07-experimentutkast/**"
+      - "08-illustrationer-och-kopplingar/**"
+      - "09-bokproduktion/**"
+      - "publishing/**"
+      - "scripts/**"
+      - "README.md"
+      - ".github/workflows/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "00-projektstyrning/**"
+      - "01-designprinciper/**"
+      - "02-komponentlada/**"
+      - "03-fardighetskarta/**"
+      - "04-experimentbank/**"
+      - "05-beroenden-och-matris/**"
+      - "06-kapitelstruktur/**"
+      - "07-experimentutkast/**"
+      - "08-illustrationer-och-kopplingar/**"
+      - "09-bokproduktion/**"
+      - "publishing/**"
+      - "scripts/**"
+      - "README.md"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Validate project
+        run: python3 scripts/validate_project.py .

@@ -114,67 +114,78 @@ v56 genomfört: E004 – Mini-trafikljus har finjusterats. Gult betyder nu konse
 v57 genomfört: Ledtrådsbilderna har tagits bort ur manus för E002–E004 och kopplingsöversikterna för E003/E004 har ritats om med parallell radstruktur utan korsande linjer.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
 
 
-Senaste uppdatering: v104 – E016 har fått lätt pedagogisk och bildmässig puts: mildrat andas-språk, lugnare loop-pil och mer luft i E016-D.
+Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+
+
+## GitHub Actions
+
+Från v105 finns ett anpassat GitHub Actions-upplägg:
+
+- `Validate` kör projektspecifik validering vid PR/push till `main`.
+- `Build Preview` kan köras manuellt och bygger EPUB + PDF i ett gemensamt artifact.
+- `Release` körs på `v*`-taggar och publicerar EPUB/PDF som separata release assets.
+
+`.github/` ska ligga i repositoryroten på samma nivå som `README.md`.

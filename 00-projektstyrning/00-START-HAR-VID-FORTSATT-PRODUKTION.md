@@ -242,3 +242,8 @@ Senaste versionsnotis:
 ## Senaste versionsnotis
 
 - `00-projektstyrning/63-v104-E016-latt-puts.md`
+
+
+## Senaste versionsnotis
+
+- `00-projektstyrning/64-v105-github-actions-publicering.md`

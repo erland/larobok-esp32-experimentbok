@@ -514,3 +514,12 @@ v57 genomfört: Bilder i sektionen Vanliga ledtrådar har tagits bort ur manus f
 - Putsade E016-C med lugnare loop-pil och tydligare looptext.
 - Putsade E016-D så talrad och kurva får bättre luft.
 - Inga kopplings- eller kodändringar.
+
+## v105 – GitHub Actions för validering, preview och release
+
+- Införde `.github/` i repositoryroten, på samma nivå som `README.md`.
+- Lade till workflows för Validate, Build Preview och Release enligt konceptet i det bifogade publiceringskitet.
+- Lade till projektspecifik `scripts/validate_project.py`.
+- Lade till projektspecifik `scripts/build_book.py` som bygger EPUB och PDF från aktiva experiment i Kapitel 1–2.
+- Lade till `publishing/metadata.yaml`, `publishing/epub.css` och `publishing/build-notes.md`.
+- Anpassade konceptet till experimentbokens struktur och parkerade E009/E010.
