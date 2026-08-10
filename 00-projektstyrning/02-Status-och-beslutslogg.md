@@ -523,3 +523,10 @@ v57 genomfört: Bilder i sektionen Vanliga ledtrådar har tagits bort ur manus f
 - Lade till projektspecifik `scripts/build_book.py` som bygger EPUB och PDF från aktiva experiment i Kapitel 1–2.
 - Lade till `publishing/metadata.yaml`, `publishing/epub.css` och `publishing/build-notes.md`.
 - Anpassade konceptet till experimentbokens struktur och parkerade E009/E010.
+
+## v106 – Fix för WeasyPrint i GitHub Actions
+
+- Åtgärdade preview-felet där `python3-weasyprint` saknade installationskandidat på Ubuntu Noble.
+- Uppdaterade preview- och release-workflows så WeasyPrint installeras i en temporär venv via pip.
+- Lade till `WEASYPRINT_BIN` som explicit väg från workflow till `scripts/build_book.py`.
+- Uppdaterade `scripts/build_book.py` så den använder `WEASYPRINT_BIN` när variabeln finns.

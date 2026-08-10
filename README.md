@@ -114,70 +114,70 @@ v56 genomfört: E004 – Mini-trafikljus har finjusterats. Gult betyder nu konse
 v57 genomfört: Ledtrådsbilderna har tagits bort ur manus för E002–E004 och kopplingsöversikterna för E003/E004 har ritats om med parallell radstruktur utan korsande linjer.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
-Senaste uppdatering: v105 – GitHub Actions-konceptet för Validate, Build Preview och Release har införts med .github i repositoryroten och projektspecifika build-/validate-skript.
+Senaste uppdatering: v106 – GitHub Actions-preview fixad för Ubuntu Noble genom att installera WeasyPrint i temporär venv i stället för apt-paketet python3-weasyprint.
 
 
 ## GitHub Actions

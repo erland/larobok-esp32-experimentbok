@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -339,11 +340,16 @@ lang: sv-SE
 
 
 def run_weasyprint(html: Path, pdf: Path) -> None:
-    candidates = [
+    explicit = os.environ.get("WEASYPRINT_BIN")
+    candidates: list[list[str]] = []
+    if explicit:
+        candidates.append([explicit, str(html), str(pdf)])
+    candidates.extend([
         ["weasyprint", str(html), str(pdf)],
         ["/opt/pyvenv/bin/weasyprint", str(html), str(pdf)],
         [sys.executable, "-m", "weasyprint", str(html), str(pdf)],
-    ]
+    ])
+
     last_error: Exception | None = None
     for cmd in candidates:
         try:
@@ -353,7 +359,8 @@ def run_weasyprint(html: Path, pdf: Path) -> None:
         except Exception as exc:
             last_error = exc
     raise RuntimeError(
-        "WeasyPrint kunde inte köras. I GitHub Actions installeras paketet python3-weasyprint."
+        "WeasyPrint kunde inte köras. I GitHub Actions installeras WeasyPrint i en venv "
+        "och sökvägen skickas via WEASYPRINT_BIN."
     ) from last_error
 
 
