@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 5%;
+  padding: 0;
+  font-family: "Literata", "Charis SIL", "Noto Serif", Georgia, serif;
+  font-size: 1em;
+  line-height: 1.45;
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+p {
+  margin: 0 0 0.65em 0;
+  text-indent: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+h1 {
+  margin: 1.0em 0 0.5em;
+  font-size: 1.6em;
+  text-align: left;
+}
+
+h2 {
+  margin: 1.0em 0 0.45em;
+  font-size: 1.25em;
+}
+
+h3 {
+  margin: 0.9em 0 0.35em;
+  font-size: 1.1em;
+}
+
+blockquote {
+  margin: 1em 1.0em;
+  padding-left: 0.8em;
+  border-left: 0.2em solid #7aaac0;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 0.88em;
+}
+
+code {
+  font-family: "SFMono-Regular", "DejaVu Sans Mono", Consolas, monospace;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 0.06em solid #9dbdca;
+  padding: 0.35em;
+  vertical-align: top;
+}
+
+th {
+  background: #eaf5fa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-page .book-title {
+  margin: 0;
+  font-size: 2.0em;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.title-page .subtitle {
+  margin: 1.0em 0 0;
+  font-size: 1.1em;
+}
+
+.title-page .author {
+  margin: 2.2em 0 0;
+  font-size: 1.05em;
+}
