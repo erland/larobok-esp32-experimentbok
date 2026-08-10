@@ -252,3 +252,8 @@ Senaste versionsnotis:
 ## Senaste versionsnotis
 
 - `00-projektstyrning/65-v106-github-actions-weasyprint-fix.md`
+
+
+## Senaste versionsnotis
+
+- `00-projektstyrning/66-v107-github-actions-pydyf-fix.md`

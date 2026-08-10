@@ -36,7 +36,12 @@ jobs:
             shared-mime-info
           python3 -m venv "${RUNNER_TEMP}/weasyprint-venv"
           "${RUNNER_TEMP}/weasyprint-venv/bin/python" -m pip install --upgrade pip
-          "${RUNNER_TEMP}/weasyprint-venv/bin/python" -m pip install "weasyprint==62.3"
+          "${RUNNER_TEMP}/weasyprint-venv/bin/python" -m pip install "weasyprint==62.3" "pydyf==0.11.0"
+          "${RUNNER_TEMP}/weasyprint-venv/bin/python" - <<'PY'
+          import weasyprint, pydyf
+          print(f"WeasyPrint: {weasyprint.__version__}")
+          print(f"pydyf: {pydyf.__version__}")
+          PY
 
       - name: Build EPUB and PDF
         env:
