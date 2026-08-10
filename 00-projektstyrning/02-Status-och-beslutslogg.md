@@ -530,3 +530,10 @@ v57 genomfört: Bilder i sektionen Vanliga ledtrådar har tagits bort ur manus f
 - Uppdaterade preview- och release-workflows så WeasyPrint installeras i en temporär venv via pip.
 - Lade till `WEASYPRINT_BIN` som explicit väg från workflow till `scripts/build_book.py`.
 - Uppdaterade `scripts/build_book.py` så den använder `WEASYPRINT_BIN` när variabeln finns.
+
+## v107 – Fix för WeasyPrint/pydyf i GitHub Actions
+
+- Åtgärdade PDF-felet `AttributeError: 'super' object has no attribute 'transform'`.
+- Låste `pydyf==0.11.0` tillsammans med `weasyprint==62.3` i preview- och release-workflows.
+- Lade till versionsutskrift för WeasyPrint och pydyf i workflow-loggen.
+- Justerade `scripts/build_book.py` så explicit `WEASYPRINT_BIN`-fel inte döljs av fallback till systemets Python.

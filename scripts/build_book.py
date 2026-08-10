@@ -341,14 +341,23 @@ lang: sv-SE
 
 def run_weasyprint(html: Path, pdf: Path) -> None:
     explicit = os.environ.get("WEASYPRINT_BIN")
-    candidates: list[list[str]] = []
     if explicit:
-        candidates.append([explicit, str(html), str(pdf)])
-    candidates.extend([
+        if not Path(explicit).exists():
+            raise RuntimeError(f"WEASYPRINT_BIN pekar på en fil som inte finns: {explicit}")
+        try:
+            subprocess.run([explicit, str(html), str(pdf)], check=True)
+            return
+        except subprocess.CalledProcessError as exc:
+            raise RuntimeError(
+                "WeasyPrint misslyckades via WEASYPRINT_BIN. Kontrollera installerade versioner "
+                "av weasyprint och pydyf i workflow-loggen."
+            ) from exc
+
+    candidates = [
         ["weasyprint", str(html), str(pdf)],
         ["/opt/pyvenv/bin/weasyprint", str(html), str(pdf)],
         [sys.executable, "-m", "weasyprint", str(html), str(pdf)],
-    ])
+    ]
 
     last_error: Exception | None = None
     for cmd in candidates:

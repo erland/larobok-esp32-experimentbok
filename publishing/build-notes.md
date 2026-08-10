@@ -34,3 +34,19 @@ GitHub Actions-previewen föll på Ubuntu Noble eftersom paketet `python3-weasyp
 - `scripts/build_book.py` använder `WEASYPRINT_BIN` om variabeln finns.
 
 Detta undviker beroendet till ett distributionspaket som inte finns i runnerns apt-källor.
+
+## v107 – pydyf pin för WeasyPrint 62.3
+
+Preview-flödet kom vidare till PDF-steget men föll i WeasyPrint med:
+
+```text
+AttributeError: 'super' object has no attribute 'transform'
+```
+
+Felet beror på en känd inkompatibilitet i kombinationen WeasyPrint 62.3 och nyare pydyf-versioner.
+
+Åtgärd:
+
+- workflows installerar nu `weasyprint==62.3` tillsammans med `pydyf==0.11.0`,
+- workflows skriver ut installerade versioner av WeasyPrint och pydyf,
+- `scripts/build_book.py` försöker inte längre falla vidare till systemets `python -m weasyprint` om explicit `WEASYPRINT_BIN` misslyckas.
