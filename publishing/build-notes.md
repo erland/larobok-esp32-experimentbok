@@ -20,3 +20,17 @@ Det här ESP32-projektet är inte ett romanprojekt. Därför är byggscriptet an
 PDF byggs via Pandoc HTML + WeasyPrint eftersom boken innehåller många SVG-bilder, tabeller, kodblock och instruktionslayout. EPUB byggs via Pandoc EPUB3.
 
 E009 och E010 är parkerade och ingår inte i aktiv bokexport.
+
+## v106 – WeasyPrint-installation på Ubuntu Noble
+
+GitHub Actions-previewen föll på Ubuntu Noble eftersom paketet `python3-weasyprint` saknar installationskandidat.
+
+Åtgärd:
+
+- workflows installerar systembibliotek via apt,
+- skapar en temporär Python-venv i `${RUNNER_TEMP}/weasyprint-venv`,
+- installerar `weasyprint==62.3` via pip,
+- skickar sökvägen till binären via `WEASYPRINT_BIN`,
+- `scripts/build_book.py` använder `WEASYPRINT_BIN` om variabeln finns.
+
+Detta undviker beroendet till ett distributionspaket som inte finns i runnerns apt-källor.

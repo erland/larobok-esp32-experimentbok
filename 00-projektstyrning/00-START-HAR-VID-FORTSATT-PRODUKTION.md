@@ -247,3 +247,8 @@ Senaste versionsnotis:
 ## Senaste versionsnotis
 
 - `00-projektstyrning/64-v105-github-actions-publicering.md`
+
+
+## Senaste versionsnotis
+
+- `00-projektstyrning/65-v106-github-actions-weasyprint-fix.md`

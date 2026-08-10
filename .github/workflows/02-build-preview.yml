@@ -25,9 +25,22 @@ jobs:
       - name: Install PDF dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends python3-weasyprint
+          sudo apt-get install -y --no-install-recommends \
+            python3-pip \
+            python3-venv \
+            libcairo2 \
+            libpango-1.0-0 \
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf-2.0-0 \
+            libffi-dev \
+            shared-mime-info
+          python3 -m venv "${RUNNER_TEMP}/weasyprint-venv"
+          "${RUNNER_TEMP}/weasyprint-venv/bin/python" -m pip install --upgrade pip
+          "${RUNNER_TEMP}/weasyprint-venv/bin/python" -m pip install "weasyprint==62.3"
 
       - name: Build EPUB and PDF
+        env:
+          WEASYPRINT_BIN: ${{ runner.temp }}/weasyprint-venv/bin/weasyprint
         run: python3 scripts/build_book.py --output-dir "${RUNNER_TEMP}/book-dist"
 
       - name: Upload preview package
